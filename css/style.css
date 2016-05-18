@@ -15,6 +15,17 @@ body {
     background-color: #e7e7e7;
 }
 
+a:link,
+a:active,
+a:visited {
+    color: #3F51B5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #536DFE;
+}
+
 nav {
     background-color: #F44336;
     color: white;
@@ -49,7 +60,9 @@ nav li {
     display: inline;
 }
 
-nav a {
+nav a:link,
+nav a:visited, 
+nav a:active {
     color: white;
     text-decoration: none;
 }
@@ -112,3 +125,20 @@ button:focus {
 .text-right {
     text-align: right;
 }
+
+ul.resources {
+    list-style-type: none;
+    padding: 0;
+    border-top: 1px solid #ddd;
+}
+
+ul.resources li {
+    line-height: 3;
+    padding: 0 1em;
+    border-bottom: 1px solid #ddd;
+}
+
+ul.resources li:hover {
+    background-color: #eee;
+}
+
