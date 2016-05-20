@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,200|Roboto:400,100);
 
 /*  JAPANESE FONT STACK
 
@@ -6,8 +6,9 @@
 	the most common Japanese font already available to the user. As Japanese fonts tend to be very large
 	to account for the vast number of kanji, it is more common to use a font stack such as this than
 	to try to load a web font (although they do exist as well)  */
+
 .ja {
-	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "Roboto", sans-serif;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "Roboto", sans-serif;
 }
 
 body {
@@ -26,25 +27,39 @@ a:hover {
     color: #536DFE;
 }
 
+#flex-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: pink;
+}
+
+
+/***************************
+ * HEADER
+ ***************************/
+
 nav {
+    position:relative;
+    z-index: 9000;
     background-color: #F44336;
     color: white;
     overflow: hidden;
     padding: 0 2em;
     line-height: 2;
-    box-shadow: 0px 5px 10px 0px rgba(33,33,33,0.3);
+    box-shadow: 0px 5px 10px 0px rgba(33, 33, 33, 0.3);
     display: flex;
     justify-content: space-between;
 }
 
 header {
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 header img {
-	height: 40px;
-	margin-right: 15px;
+    height: 40px;
+    margin-right: 15px;
 }
 
 nav h1 {
@@ -61,84 +76,135 @@ nav li {
 }
 
 nav a:link,
-nav a:visited, 
+nav a:visited,
 nav a:active {
     color: white;
     text-decoration: none;
 }
 
-main {
+
+/********************************
+ * Main
+ *******************************/
+ 
+ main {
+     flex-grow: 2;
+     display: flex;
+ }
+ 
+/* WELCOME */
+
+#welcome {
+    flex-grow: 2;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
+    position: relative;
+    z-index: 100;
+    background-image: url(http://res.cloudinary.com/mca62511/image/upload/e_red/v1459296785/parallax1_voqcc8.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
 }
 
-.card {
-    background-color: white;
-    max-width: 570px;
-    margin: 50px 15px;
-    box-shadow: 0px 3px 10px 0px rgba(33,33,33,0.3);
-    border-radius: 3px;
+.welcome-content {
+    flex-grow: 2;
+    background: rgba(33,33,33,0.5);
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    
 }
 
-.card .content {
-    padding: 1em;
+.welcome-content h1 {
+    font-family: Dosis;
+    font-weight: 200;
+    font-size: 300%;
 }
 
-.card .media img {
-    width: 100%;
+.welcome-content p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 125%;
+    line-height: 1.5;
 }
+
+button {
+    background-color: transparent;
+    color: white;
+    line-height: 2;
+    border: 1px solid rgba(255,255,255,0.5);
+    font-weight: 100;
+    font-size: 125%;
+    text-transform: uppercase;
+    margin: 1em 0;
+    font-family: Roboto;
+}
+
+button:hover {
+    text-shadow: 0px 0px white;
+    border: 1px solid white;
+}
+
+/* ARTICLES */
+
+#articles {
+    min-height: 500px;
+}
+
+.articles-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.article-card {
+    background: white;
+    box-shadow: 0px 2px 1px 0px rgba(33,33,33,0.3);
+    margin: 0.25em;
+}
+
+.article-card .media {
+    height: 200px;
+    width: 200px;
+}
+
+
+
+
+/**********************
+ * Footer
+ **********************/
 
 footer {
+    align-self: baseline;
     background-color: #666;
     color: #ddd;
     overflow: hidden;
     line-height: 5;
-    padding: 0 2em;
+    width: 100%;
+    text-align: center;
 }
 
-button {
-    background-color: #536DFE;
-    color: white;
-    line-height: 2;
-    font-size: 125%;
-    border-top: 0px;
-    border-right: 1px solid #303F9F;
-    border-left: 0px;
-    border-bottom: 3px solid #303F9F;
-    border-radius: 6px;
+.desktop-tablet-only {
+    display: inline-block;
 }
 
-button:active {
-    margin-top: 3px;
-    margin-left: 1px;
-    border-bottom: 0px;
-    border-top: 0px;
+.phone-only {
+    display: none;
 }
 
-button:hover,
-button:focus {
-    outline: none;
+@media (max-width: 500px) {
+    .phone-only {
+        display: inline-block;
+    }
 }
 
-.text-right {
-    text-align: right;
+@media (max-width: 500px){
+    .desktop-tablet-only {
+        display: none;
+    }
 }
-
-ul.resources {
-    list-style-type: none;
-    padding: 0;
-    border-top: 1px solid #ddd;
-}
-
-ul.resources li {
-    line-height: 3;
-    padding: 0 1em;
-    border-bottom: 1px solid #ddd;
-}
-
-ul.resources li:hover {
-    background-color: #eee;
-}
-
