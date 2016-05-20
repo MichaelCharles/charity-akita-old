@@ -13,8 +13,7 @@
 
 body {
     font-family: Roboto, Helvetica, Arial, sans-serif;
-    background-color: #ededed;
-    color: #212121;
+    background-color: #e7e7e7;
 }
 
 a:link,
@@ -28,15 +27,11 @@ a:hover {
     color: #536DFE;
 }
 
-div {
-    position: relative;
-    display: block;
-}
-
 #flex-wrap {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background: pink;
 }
 
 
@@ -92,12 +87,19 @@ nav a:active {
  * Main
  *******************************/
  
+ main {
+     flex-grow: 2;
+     display: flex;
+ }
+ 
 /* WELCOME */
 
 #welcome {
+    flex-grow: 2;
+    display: flex;
     position: relative;
     z-index: 100;
-    background-image: url(../img/akita-view.jpg);
+    background-image: url(http://res.cloudinary.com/mca62511/image/upload/e_red/v1459296785/parallax1_voqcc8.jpg);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -106,7 +108,7 @@ nav a:active {
 }
 
 .welcome-content {
-
+    flex-grow: 2;
     background: rgba(33,33,33,0.5);
     margin: 0 auto;
     padding: 20px;
@@ -130,7 +132,7 @@ nav a:active {
     line-height: 1.5;
 }
 
-#contact-button {
+button {
     background-color: transparent;
     color: white;
     line-height: 2;
@@ -142,146 +144,36 @@ nav a:active {
     font-family: Roboto;
 }
 
-#contact-button:hover {
+button:hover {
     text-shadow: 0px 0px white;
     border: 1px solid white;
 }
 
 /* ARTICLES */
 
-/*-----------CONTENT WRAP-------------*/
+#articles {
+    min-height: 500px;
+}
 
-.content-wrapper {
-    display: flex;
-    
+.articles-content {
     max-width: 1000px;
     margin: 0 auto;
-}
-
-/*-----------MEDIUM-------------*/
-
-.articles {
-    min-height: 100px;
-    width: 66%;
-}
-
-.section-header {
-    margin-left: 1em;
-}
-
-
-#medium-articles {
-    margin: 1em;
-    padding: 1px; /* This is to give the cards something
-                     to "push against" when margin is
-                     added to them on hover. */
+    padding: 2em;
 }
 
 .article-card {
-    position: relative;
-    z-index: 1000;
     background: white;
-    display: flex;
-    box-shadow: 0px 1px 2px 0px rgba(33,33,33,0.3);
-    margin-bottom: 1px;
-    min-height: 150px;
+    box-shadow: 0px 2px 1px 0px rgba(33,33,33,0.3);
+    margin: 0.25em;
 }
 
-.read-more-card {
-    position: relative;
-    z-index: 1000;
-    margin-bottom: 1px;
-    text-align: right;
-    width: auto;
-    line-height: 3;
-    font-size: 110%;
-    color: #212121;
-    padding-right: 2em;
-}
-
-.article-card:hover {
-    margin-top: -3px;
-    margin-bottom: 4px;
-    z-index: 1001;
-    box-shadow: 0px 5px 10px 0px rgba(33,33,33,0.3);
-}
-
-
-.article-media {
-    background-color: #f9f9f9;
-    width: 25%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.article-content {
-    width: 75%;
-}
-
-.article-content h3 {
-    padding-left: 1em;
-    color: #212121;
-}
-
-.article-content p {
-    padding-left: 1em;
-    color: #656565;
-}
-
-/*-----------EVENTS-------------*/
-
-.facebook-sidebar {
-    width: 33%;
-    min-height: 100px;
-}
-
-#facebook-events {
-    margin: 1em;
-    padding: 1px; /* This is to give the cards something
-                     to "push against" when margin is
-                     added to them on hover. */
-}
-
-.event-card {
-    position: relative;
-    z-index: 1000;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    box-shadow: 0px 1px 2px 0px rgba(33,33,33,0.3);
-    margin-bottom: 1px;
-}
-
-.event-card:hover {
-    margin-top: -3px;
-    margin-bottom: 4px;
-    z-index: 1001;
-    box-shadow: 0px 5px 10px 0px rgba(33,33,33,0.3);
-}
-
-
-.event-media {
-    background-color: #f9f9f9;
+.article-card .media {
     height: 200px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 200px;
 }
 
-.event-content {
-    padding: 1em;
-}
 
-.event-content h3 {
-    color: #212121;
-}
 
-.event-content p {
-    color: #656565;
-}
 
 /**********************
  * Footer
@@ -314,31 +206,5 @@ footer {
 @media (max-width: 500px){
     .desktop-tablet-only {
         display: none;
-    }
-}
-
-@media (max-width: 1000px){
-    .content-wrapper {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .articles {
-        width: auto;
-    }
-    .facebook-sidebar {
-        width: auto;
-    }
-    .event-media {
-        height: 200px;
-    }
-    .article-card {
-        flex-direction: column;
-    }
-    .article-media {
-        height: 200px;
-        width: auto;
-    }
-    .article-content {
-        width: auto;
     }
 }
