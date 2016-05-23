@@ -1,15 +1,15 @@
 /* global $ */
 /* global happyMedium */
 
-$(document).ready(function() {
-    //happyMedium("https://medium.com/@michaelcharl.es", function(data) {
-    happyMedium("https://medium.com/akita-association-of-jets", function(data) {
+$(document).ready(function () {
+    "use strict";
+    happyMedium("https://medium.com/akita-association-of-jets", function (data) {
 
-        var postData = $.map(data.payload.references.Post, function(el) {
-            return el
+        var postData = $.map(data.payload.references.Post, function (el) {
+            return el;
         });
         //console.log(postData);
-        var buildMediumPosts = function(data, count) {
+        var buildMediumPosts = function (data, count) {
 
             if (count === undefined) {
                 count = 0;
@@ -26,11 +26,9 @@ $(document).ready(function() {
                 $articleCard.append($postContent);
                 var $articleDate = $("<p class='date'></p>");
                 var pD = new Date(thisPost.firstPublishedAt);
-                var monthNames = ["January", "February", "March", "April", "May", "June",
-                    "July", "August", "September", "October", "November", "December"
-                ];
+                var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
                 $articleDate.html("Published on " + monthNames[pD.getMonth()] + " " + pD.getDate() + ", " + pD.getFullYear());
-                thisPost.previewContent.bodyModel.paragraphs.forEach(function(preview) {
+                thisPost.previewContent.bodyModel.paragraphs.forEach(function (preview) {
                     if (preview.type === 1) {
                         var $postDesc = $("<p>" + preview.text + "</p>");
                         $postContent.append($postDesc);
@@ -41,7 +39,7 @@ $(document).ready(function() {
                     }
                     else if (preview.type === 4) {
                         $postImage.css({
-                            "background-image": "url(https://cdn-images-1.medium.com/max/500/" + preview.metadata.id
+                            "background-image": "url('https://cdn-images-1.medium.com/max/500/" + preview.metadata.id +"')"
                         });
                     }
                     else if (preview.type === 3) {
@@ -53,7 +51,7 @@ $(document).ready(function() {
                         $postContent.append($postPreviewTitle);
                     }
                     else {
-                        console.log("Unrecognized preview content type: " + preview.type);
+                        throw new Error("Unrecognized preview content type: " + preview.type);
                     }
                 });
                 $postContent.append($articleDate);
@@ -62,10 +60,10 @@ $(document).ready(function() {
                 buildMediumPosts(data, count + 1);
             }
             else {
-                var $moreLink = $("<div class='read-more-card'><a href='https://medium.com/akita-association-of-jets'>Read more articles on Medium.com</a></div>")
+                var $moreLink = $("<div class='read-more-card'><a href='https://medium.com/akita-association-of-jets'>Read more articles on Medium.com</a></div>");
                 $("#medium-articles").append($moreLink);
             }
-        }
+        };
 
         buildMediumPosts(postData);
     });
@@ -77,19 +75,28 @@ $(document).ready(function() {
     $.ajaxSetup({
         cache: true
     });
-    $.getScript('//connect.facebook.net/en_US/sdk.js', function() {
+    $.getScript('//connect.facebook.net/en_US/sdk.js', function () {
         FB.init({
             appId: '1925408434352308',
-            version: 'v2.5', // or v2.0, v2.1, v2.2, v2.3
+            version: 'v2.5' /* or v2.0, v2.1, v2.2, v2.3 */
         });
         FB.api(
             "/923345024404557/events/?access_token=1925408434352308%7C-LqKZs2921LCzVaRg4VMbCHojW4",
-            function(data) {
+            function (data) {
+
+
+
+                function parseFacebookDate(date) {
+                    date = date.split("T");
+                    return date[0];
+                }
+
+
                 if (data && !data.error) {
                     /* handle the result */
                     $(".facebook-loading").hide();
 
-                    function buildEvents(data, count) {
+                    var buildEvents = function (data, count) {
                         if (!count) {
                             count = 0;
                         }
@@ -102,10 +109,10 @@ $(document).ready(function() {
                             var $eventContent = $('<div class="event-content"></div>');
                             var $eventTitle = $('<h3></h3>');
                             var $eventDate = $('<p class="event-date"></p>');
-                            var eD = new Date(thisEvent.start_time);
-                            var monthNames = ["January", "February", "March", "April", "May", "June",
-                                "July", "August", "September", "October", "November", "December"
-                            ];
+
+                            var eD = new Date(parseFacebookDate(thisEvent.start_time));
+
+                            var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
                             $eventDate.html(monthNames[eD.getMonth()] + " " + eD.getDate() + ", " + eD.getFullYear());
                             $eventTitle.html(thisEvent.name);
                             var $eventDescription = $('<p></p>');
@@ -120,16 +127,16 @@ $(document).ready(function() {
                             buildEvents(data, (count + 1));
                         }
                         else {
-                            var $moreLink = $("<div class='read-more-card read-more-events'><a href='https://facebook.com/charityakita/events'>See more events on Facebook</a></div>")
+                            var $moreLink = $("<div class='read-more-card read-more-events'><a href='https://facebook.com/charityakita/events'>See more events on Facebook</a></div>");
                             $("#facebook-events").append($moreLink);
                         }
-                    }
+                    };
 
                     buildEvents(data.data);
 
                 }
                 else {
-                    console.log(data.error);
+                    throw new Error("Error: " + data.error);
                 }
             }
         );
@@ -141,16 +148,16 @@ $(document).ready(function() {
         $.ajax({
             type: 'HEAD',
             url: url,
-            success: function() {
+            success: function () {
                 callback();
             },
-            error: function(e) {
-                // do nothing
+            error: function () {
+                // Do nothing.
             }
         });
     }
-    
-    ifURLExists("http://archive.charityakita.com", function() {
+
+    ifURLExists("http://archive.charityakita.com", function () {
         $(".archive-notice").show();
     });
 });
