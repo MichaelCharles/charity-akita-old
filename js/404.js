@@ -14,10 +14,6 @@ $(document).ready(function () {
 
 
     if (window.location.href.indexOf("/blog/") > -1) {
-        var newURL = window.location.href.replace("/blog/", "/archive");
-        
-        ifURLExists(newURL, function() {
-            window.location.replace(newURL);
-        });
+            window.location.replace("http://charityakita.com/archive");
     }
 });
