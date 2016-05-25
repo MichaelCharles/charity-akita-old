@@ -1,0 +1,311 @@
+# Copyright (C) 2014
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Numix Post Slider 1.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-06 11:23:19+00:00\n"
+"PO-Revision-Date: 2014-06-06 10:37-0500\n"
+"Last-Translator: \n"
+"Language-Team: Numix Technologies <numixtech@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e;_n;_x;esc_html_e;esc_html__;esc_attr_e;"
+"esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/class-numix-post-slider-admin.php:138 admin/views/edit-slider.php:108
+msgid "Save Slider"
+msgstr ""
+
+#: admin/class-numix-post-slider-admin.php:139 admin/views/edit-slider.php:108
+msgid "Create Slider"
+msgstr ""
+
+#: admin/class-numix-post-slider-admin.php:140
+msgid "Delete slider permanently?"
+msgstr ""
+
+#: admin/class-numix-post-slider-admin.php:141
+msgid "Saving..."
+msgstr ""
+
+#: admin/class-numix-post-slider-admin.php:142
+msgid "Saved"
+msgstr ""
+
+#: admin/class-numix-post-slider-admin.php:143
+msgid "Unsaved"
+msgstr ""
+
+#: admin/class-numix-post-slider-admin.php:144
+msgid "All"
+msgstr ""
+
+#: admin/class-numix-post-slider-admin.php:145
+msgid "No taxonomies found for selected post type"
+msgstr ""
+
+#: admin/class-numix-post-slider-admin.php:164
+#: admin/class-numix-post-slider-admin.php:165
+msgid "Numix Slider"
+msgstr ""
+
+#: admin/class-numix-post-slider-admin.php:242
+msgid "Settings"
+msgstr ""
+
+#: admin/views/edit-slider.php:15
+msgid "Back to Numix Slider list"
+msgstr ""
+
+#: admin/views/edit-slider.php:19
+msgid "Edit Numix Slider #"
+msgstr ""
+
+#: admin/views/edit-slider.php:22
+msgid "Add New Numix Slider"
+msgstr ""
+
+#: admin/views/edit-slider.php:31
+msgid "Type Slider name here"
+msgstr ""
+
+#: admin/views/edit-slider.php:35
+msgid "Select taxonomies for featured images to be used in slider"
+msgstr ""
+
+#: admin/views/edit-slider.php:40
+msgid "Post taxonomies"
+msgstr ""
+
+#: admin/views/edit-slider.php:50
+msgid "Match any"
+msgstr ""
+
+#: admin/views/edit-slider.php:53
+msgid "Match all"
+msgstr ""
+
+#: admin/views/edit-slider.php:61
+msgid "Max posts to include"
+msgstr ""
+
+#: admin/views/edit-slider.php:69
+msgid "Order by"
+msgstr ""
+
+#: admin/views/edit-slider.php:73
+msgid "Date"
+msgstr ""
+
+#: admin/views/edit-slider.php:73
+msgid "Menu Order"
+msgstr ""
+
+#: admin/views/edit-slider.php:78
+msgid "Ascending"
+msgstr ""
+
+#: admin/views/edit-slider.php:81
+msgid "Descending"
+msgstr ""
+
+#: admin/views/edit-slider.php:89
+msgid "Hide posts from homepage"
+msgstr ""
+
+#: admin/views/edit-slider.php:92
+msgid ""
+"Checking this option will hide posts of selected categories on homepage."
+msgstr ""
+
+#: admin/views/edit-slider.php:105
+msgid "Tip: Hover over labels to learn more about options."
+msgstr ""
+
+#: admin/views/admin.php:23
+#, php-format
+msgid "Slider #%d duplicated to new slider #%d."
+msgstr ""
+
+#: admin/views/admin.php:28
+#, php-format
+msgid "Slider #%d permanently deleted."
+msgstr ""
+
+#: admin/views/admin.php:35
+msgid "ID"
+msgstr ""
+
+#: admin/views/admin.php:36
+msgid "Name"
+msgstr ""
+
+#: admin/views/admin.php:37
+msgid "Actions"
+msgstr ""
+
+#: admin/views/admin.php:38
+msgid "Shortcode"
+msgstr ""
+
+#: admin/views/admin.php:48
+msgid ""
+"No slider has been created yet. Please Click on \"Add new\" button to create "
+"new slider."
+msgstr ""
+
+#: admin/views/admin.php:63 admin/views/admin.php:66
+msgid "Edit"
+msgstr ""
+
+#: admin/views/admin.php:66
+msgid "Edit this item"
+msgstr ""
+
+#: admin/views/admin.php:67
+msgid "Delete slider permanently"
+msgstr ""
+
+#: admin/views/admin.php:67
+msgid "Delete"
+msgstr ""
+
+#: admin/views/admin.php:68
+msgid "Duplicate Slider"
+msgstr ""
+
+#: admin/views/admin.php:68
+msgid "Duplicate"
+msgstr ""
+
+#: admin/views/numixslider-options.php:16
+msgid "Slider Options"
+msgstr ""
+
+#: admin/views/numixslider-options.php:22
+msgid "Slider width. Any CSS acceptable value."
+msgstr ""
+
+#: admin/views/numixslider-options.php:22
+msgid "Width"
+msgstr ""
+
+#: admin/views/numixslider-options.php:26
+msgid ""
+"Slider height. Any CSS acceptable value. Set according to all images height."
+msgstr ""
+
+#: admin/views/numixslider-options.php:26
+msgid "Height"
+msgstr ""
+
+#: admin/views/numixslider-options.php:34
+msgid "Makes the slider infinite/continous."
+msgstr ""
+
+#: admin/views/numixslider-options.php:34
+msgid "Infinite"
+msgstr ""
+
+#: admin/views/numixslider-options.php:41
+msgid ""
+"Jump last slide to first slide (This works only when infinite is not set.)"
+msgstr ""
+
+#: admin/views/numixslider-options.php:41
+msgid "Loop"
+msgstr ""
+
+#: admin/views/numixslider-options.php:49
+msgid "Display current slide in center."
+msgstr ""
+
+#: admin/views/numixslider-options.php:49
+msgid "Center"
+msgstr ""
+
+#: admin/views/numixslider-options.php:57
+msgid "Enable autoplay."
+msgstr ""
+
+#: admin/views/numixslider-options.php:57
+msgid "Autoplay"
+msgstr ""
+
+#: admin/views/numixslider-options.php:62
+msgid "Time in milliseconds before next slide is shown."
+msgstr ""
+
+#: admin/views/numixslider-options.php:62
+msgid "Autoplay Interval"
+msgstr ""
+
+#: admin/views/numixslider-options.php:67
+msgid ""
+"Stops autoplay when user takes control over Slider(drag, click, arrow e.t."
+"c.)."
+msgstr ""
+
+#: admin/views/numixslider-options.php:67
+msgid "Autoplay Stop on action"
+msgstr ""
+
+#: admin/views/numixslider-options.php:77
+msgid "Enable next and previous arrows."
+msgstr ""
+
+#: admin/views/numixslider-options.php:77
+msgid "Arrows (next, prev)"
+msgstr ""
+
+#: admin/views/numixslider-options.php:81
+msgid "Auto hide next and previous arrows when mouse leaves slider area."
+msgstr ""
+
+#: admin/views/numixslider-options.php:81
+msgid "Arrows auto-hide"
+msgstr ""
+
+#: admin/views/numixslider-options.php:89
+msgid "Slide transition speed."
+msgstr ""
+
+#: admin/views/numixslider-options.php:89
+msgid "Animation speed"
+msgstr ""
+
+#: admin/views/numixslider-options.php:99
+msgid ""
+"Redirect to post URL on click. If this option is not set clicked slide will "
+"be active."
+msgstr ""
+
+#: admin/views/numixslider-options.php:99
+msgid "Link slide to post"
+msgstr ""
+
+#: admin/views/numixslider-options.php:106
+msgid "Display post title on slide."
+msgstr ""
+
+#: admin/views/numixslider-options.php:106
+msgid "Display Post Title"
+msgstr ""
+
+#: admin/views/numixslider-options.php:114
+msgid "Set slider bottom navigation type."
+msgstr ""
+
+#: admin/views/numixslider-options.php:114
+msgid "Slider Bottom Navigation"
+msgstr ""
+
+#: public/class-numix-post-slider.php:470
+msgid "Warning: No posts found with selected settings"
+msgstr ""

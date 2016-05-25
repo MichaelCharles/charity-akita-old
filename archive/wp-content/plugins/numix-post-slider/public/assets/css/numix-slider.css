@@ -1,0 +1,122 @@
+/* This stylesheet is used to style the public-facing components of the plugin. */
+div.nslider-wrapper {
+	position: relative;
+}
+div.nslider {
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+	visibility: hidden;
+	max-width: 100%;
+}
+div.nslider ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+div.nslider ul li {
+	float: left;
+	margin: 0 5px 0 0;
+	list-style: none;
+	padding: 0;
+	position: relative;
+	opacity: 0.7;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+div.nslider li.active {
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+div.nslider ul li img {
+	max-width: none;
+}
+div.nslider-controls {
+	width: 100%;
+	overflow: hidden;
+	margin-top: 5px;
+	text-align: center;
+	visibility: hidden;
+}
+div.nslider-controls a {
+	text-decoration: none;
+	margin-right: 5px;
+	font-weight: normal;
+	opacity: 0.8;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+div.nslider-controls a:last-child {
+	margin-right: 0;
+}
+div.nslider-controls.ns-thumbnail a {
+	opacity: 0.5;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";	
+}
+div.nslider-controls a.active {
+	font-weight: bold;
+	opacity: 1.0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+div.nslider-controls a img {
+	margin-bottom: 5px;
+}
+div.nslider-controls.ns-thumbnail a img {
+	height: 100%\9;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";	
+}
+div.nslider-controls.ns-thumbnail a.active img {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+div.nslider-arrow-navigation {
+	position: relative;
+	margin: 0 auto;
+}
+div.nslider-arrow-navigation a {
+	width: 45px;
+	position: absolute;
+	display: block;
+	text-decoration: none;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+div.nslider-arrow-navigation a:hover {
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";	
+}
+div.nslider-arrow-navigation a.nslider-arrow-left {
+	background: url('../images/slide_left.png') no-repeat center center;
+	left: 0px;
+}
+div.nslider-arrow-navigation a.nslider-arrow-right {
+	background: url('../images/slide_right.png') no-repeat center center;
+	right: 0px;
+}
+div.nslider-preloader {
+	background: url('../images/loading.gif') no-repeat center center;
+	/*background-color:#FFF;*/
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+div.ns-caption {
+	height: 40px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: url('../images/caption-bg.png') repeat;
+	text-align: center;
+	font-size: 18px;
+	cursor: default;
+}
+div.ns-caption span {
+	color: #FFF;
+	padding: 0 10px 0 10px;
+	line-height: 40px;
+	vertical-align: middle;
+}
+div.ns-caption a,
+div.ns-caption a:visited {
+	color: #FFF;
+	text-decoration: none;
+}

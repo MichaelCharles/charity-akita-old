@@ -1,0 +1,149 @@
+/* This stylesheet is used to style the admin option form of the plugin. */
+.numix-admin .sortable-slides-container {
+	margin-right: 420px;
+}
+.numix-admin #titlediv #slider_name {
+	line-height: 28px;
+	padding: 3px 8px;
+	font-size: 1.7em;
+	height: 1.7em;
+	width: 100%;
+	outline: 0;
+	margin: 0;
+}
+.numix-admin #numixlisder-options select {
+	width: 130px;
+}
+.numix-admin .radio-buttons {
+	line-height: 28px;
+	margin-right: 10px;
+}
+.numix-admin #numixlisder-options .unit {
+	line-height: 28px;
+}
+.numix-admin .options-sidebar {
+	clear: right;
+	float: right;
+	width: 400px;
+	position: relative;
+	display: block;
+	margin-top: -27px;
+
+}
+.numix-admin .sortable-slides-body {
+	clear: left;
+    float: left;
+    margin-right: -420px;
+    width: 100%;
+}
+.ui-dropdownchecklist-text {
+	font-size: 14px;
+    line-height: 22px;
+    margin-right: 17px;
+    padding: 3px;
+    padding-left:8px;
+}
+.ui-dropdownchecklist-selector {
+	background: url("../images/dropdown.png") no-repeat scroll right center #FFFFFF;
+    border: 1px solid #DDDDDD;
+    height: 26px;
+}
+.ui-dropdownchecklist-group {
+	font-style: italic;
+    font-weight: bold;
+    padding: 7px 5px 3px;
+}
+.ui-dropdownchecklist-dropcontainer {
+	background-color: #FFFFFF;
+    border: 1px solid #999999;
+}
+.ui-dropdownchecklist-indent {
+	padding-left: 20px;
+}
+.field-row {
+	padding-left: 10px;
+}
+.numix-admin .options-sidebar label {
+	text-align: right;
+	width: 160px;
+	float: left;
+	margin-bottom: 15px;
+	margin-top:4px;
+}
+.numix-admin .options-sidebar input,
+.numix-admin .options-sidebar select {
+	float: left;
+	margin: 0;
+	margin-left: 10px;
+}
+.numix-admin .options-sidebar input[type="checkbox"] {
+	margin-top:6px;
+}
+.numix-admin .options-sidebar .field-row {
+	clear: both;
+	position: relative;
+	height: 25px;
+}
+.numix-admin .options-sidebar .fields-group {
+	margin-bottom: 15px;
+	clear: both;
+}
+.numix-admin .options-sidebar .nav-font-color {
+	text-align: center;
+	height: auto;
+}
+.numix-admin .options-sidebar .nav-font-color label {
+	float: none;
+}
+#numixslider-layout li {
+	display: inline-block;
+	margin: 0 5px 0 0;
+	padding: 0px;
+	border: 1px solid white;
+	cursor: pointer;
+}
+#numixslider-layout li:hover {
+	border: 1px solid grey;
+}
+#numixslider-layout li.selected {
+	border: 1px solid grey;
+}
+#post-categories-select {
+	height: 28px;
+}
+.qtip-content {
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 16px;
+	text-shadow: 0 1px hsl(0, 0%, 0%);
+	font-family: 'Lucida Grande', sans-serif;
+}
+
+.actions-holder {
+	margin-top: -1px;
+	margin-bottom: 21px;
+	padding: 5px 10px 10px 4px;
+	height: 23px;
+}
+
+.actions-holder .waiting {
+	width: 60px;
+	height: 16px;
+	line-height: 20px;
+	padding: 0;
+	overflow: hidden;
+	margin-left: 10px;
+	margin-top: 4px;
+	background-repeat: no-repeat;	
+	float: left;
+	text-align: left;
+	background-position: top left;
+	color: #008000;
+}
+.actions-holder .waiting.ajax-saved {
+	visibility: visible;
+	background-image: none !important;
+}
+.actions-holder .waiting.unsaved {
+	color: red;
+}
