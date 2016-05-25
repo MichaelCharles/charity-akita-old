@@ -13,7 +13,7 @@ $(document).ready(function () {
     }
 
 
-    if (window.location.href.indexOf("/blog/") > -1) {
+    if (window.location.href.indexOf("/blog/") > -1 || window.location.href.indexOf("archive.charityakita.com") > -1 ) {
             window.location.replace("http://charityakita.com/archive");
     }
 });
