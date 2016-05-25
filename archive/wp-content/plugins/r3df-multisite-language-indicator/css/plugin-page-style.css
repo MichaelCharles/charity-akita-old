@@ -1,0 +1,18 @@
+.r3df-header {
+    border-bottom: 1px solid #000;
+}
+
+.r3df-alert {
+    color:red;
+    font-weight:bold;
+}
+
+.r3df-help {
+    border-top: 1px solid #ccc;
+    margin-top: 50px;
+    padding-top: 10px;
+}
+
+table + h3 {
+    margin-top: 3em;
+}

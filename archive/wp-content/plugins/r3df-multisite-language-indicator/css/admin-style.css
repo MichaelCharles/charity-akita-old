@@ -1,0 +1,31 @@
+.wp-admin #wpadminbar #wp-admin-bar-site-name.hide-site-name-icon > .ab-item::before {
+    display: none;
+}
+
+span.mli-flag {
+    margin: 0 .5em 0 0 !important;
+    background: transparent url(../flags/unknown.svg) no-repeat left center;
+    background-size: contain;
+    display: inline-block;
+    width: 1.33em !important;
+    height: 1em !important;
+    /*line-height: 1em !important;*/
+}
+
+option.mli-flag {
+    margin: 0 !important;
+    background: transparent url(../flags/unknown.svg) no-repeat .2em center;
+    background-size: 1.33em;
+    padding-left: 2em;
+}
+
+.mli-flag-unknown { background-image: url(../flags/unknown.svg) }
+
+.mli-flag.rtl {
+    margin: 0 0 0 .5em !important;
+    background-position: right top !important;
+}
+
+.mli-site-table td {
+    padding: 0 10px 0 0;
+}

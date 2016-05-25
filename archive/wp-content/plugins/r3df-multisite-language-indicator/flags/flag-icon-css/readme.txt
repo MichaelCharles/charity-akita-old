@@ -1,0 +1,1 @@
+This svg flag set is the 4x3 flag set from the MIT licensed https://github.com/lipis/flag-icon-css.
