@@ -10,6 +10,7 @@ function happyMedium(url, callback) {
         var dataString = data.results[0];
         var jsonString = dataString.substring(18, (dataString.length - 7));
         var json = JSON.parse(jsonString);
+
         callback(json);
     });
 }
