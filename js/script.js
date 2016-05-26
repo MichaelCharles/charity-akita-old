@@ -156,8 +156,4 @@ $(document).ready(function () {
             }
         });
     }
-
-    ifURLExists("http://archive.charityakita.com", function () {
-        $(".archive-notice").show();
-    });
 });
