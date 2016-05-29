@@ -26,7 +26,7 @@
     <!-- Facebook -->
     <meta property="og:title" content="Akita Association of JETs">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="http://res.cloudinary.com/mca62511/image/upload/c_scale,w_836/v1463367245/IMG_20151212_185845_hb7hs1.jpg">
+    <meta property="og:image" content="http://charityakita.com/img/akita-view.jpg">
     <meta property="og:description" content="Akita Association of JETs (AAJ) is a team of Akita community members who seek to create connections between foreign expats and the wider Japanese community. ">
 
 
@@ -34,7 +34,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Akita Association of JETs">
     <meta name="twitter:description" content="Akita Association of JETs (AAJ) is a team of Akita community members who seek to create connections between foreign expats and the wider Japanese community. ">
-    <meta name="twitter:image" content="http://res.cloudinary.com/mca62511/image/upload/c_scale,w_836/v1463367245/IMG_20151212_185845_hb7hs1.jpg">
+    <meta name="twitter:image" content="http://charityakita.com/img/akita-view.jpg">
 
     <!-- Normalize.css for cross browser consistency -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css">
@@ -43,12 +43,12 @@
     <link rel="stylesheet" href="css/style.css">
 
 
-<script src="https://use.fontawesome.com/9ae522a20e.js"></script>
+    <script src="https://use.fontawesome.com/9ae522a20e.js"></script>
 </head>
 
 <body>
     <script>
-        window.fbAsyncInit = function() {
+        window.fbAsyncInit = function () {
             FB.init({
                 appId: '1925408434352308',
                 xfbml: true,
@@ -56,7 +56,7 @@
             });
         };
 
-        (function(d, s, id) {
+        (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) {
                 return;
@@ -99,16 +99,26 @@
                     <button id="contact-button">Contact Us</button>
                 </div>
             </div>
-<!--
-                <div class="announcement">
-                    <h3>Announcement</h3>
-                    <p>We are excited to announce that we will be voting on the adoption of a charter. Voting will open on Monday June 6 and close on the following Monday, June 13. Those interested in voting should read the charter draft and then submit their email. Instructions for how to vote will be sent on Monday June 6.</p>
-                    <p class="align-right"><button class="material-button"><i class="fa fa-file-text" aria-hidden="true"></i>Read the Charter Draft</button><button class="material-button">Sign up to Vote</button></p>
-                </div>
--->
+
+<!--            <div class="announcement">
+                <h3>Announcement</h3>
+                <p>We are excited to announce that we will be voting on the adoption of a charter. Voting will open on Monday June 6 and close on the following Monday, June 13. Those interested in voting should read the charter draft and then submit their
+                    email. Instructions for how to vote will be sent on Monday June 6.</p>
+                <p class="align-right">
+                    <a href="docs/Charity%20Akita%20Charter.pdf" target="_blank">
+                        <button class="material-button"><i class="fa fa-file-text" aria-hidden="true"></i>Read the Charter Draft</button>
+                    </a>
+                    <a href="http://goo.gl/forms/tyEwrXi79PvzaNRg2" target="_blank">
+                        <button class="material-button">Sign up to Vote</button>
+                    </a>
+                </p>
+            </div>
+            -->
+            
+
             <div class="content-wrapper">
-                
-                
+
+
 
                 <div class="articles">
                     <h3 class="section-header">News</h3>
@@ -155,9 +165,11 @@
                 </div>
 
             </div>
-<div class="archive-notice"><p class="archive-notice-text">On May 19, 2016 we moved to using Medium as our blogging platform. An archive of the posts from the old website blog can be found <a href="http://charityakita.com/archive">here</a>.</p></div>            
+            <div class="archive-notice">
+                <p class="archive-notice-text">On May 19, 2016 we moved to using Medium as our blogging platform. An archive of the posts from the old website blog can be found <a href="http://charityakita.com/archive">here</a>.</p>
+            </div>
         </main>
-                    
+
         <footer>
             Copyright &copy; 2011-2016 <span class="desktop-tablet-only">Akita Association of JETs</span><span class="phone-only">AAJ</span>
         </footer>
@@ -169,6 +181,24 @@
 
     <!-- Material Design Lite -->
     <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    
+    <!-- Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-74758128-3', 'auto');
+        ga('send', 'pageview');
+    </script>
 
     <!-- Custom JavaScript -->
     <script src="js/happy-medium.js"></script>
