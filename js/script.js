@@ -3,7 +3,7 @@
 
 $(document).ready(function () {
     "use strict";
-    happyMedium("https://medium.com/akita-association-of-jets", function (data) {
+    happyMedium("https://medium.com/charity-akita", function (data) {
 
         var postData = $.map(data.payload.references.Post, function (el) {
             return el;
@@ -54,6 +54,15 @@ $(document).ready(function () {
                         throw new Error("Unrecognized preview content type: " + preview.type);
                     }
                 });
+                if ($postImage.css("background-image") === "") {
+                    $postImage.css({
+                        "width": "0px"
+                    })
+                    $postContent.css({
+                        "width": "100%"
+                    })
+                }
+                
                 $postContent.append($articleDate);
                 $("#medium-articles").append($articleCard);
 
