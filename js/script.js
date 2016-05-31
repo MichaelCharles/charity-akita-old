@@ -69,7 +69,7 @@ $(document).ready(function () {
                 buildMediumPosts(data, count + 1);
             }
             else {
-                var $moreLink = $("<div class='read-more-card'><a href='https://medium.com/akita-association-of-jets'>Read more articles on Medium.com</a></div>");
+                var $moreLink = $("<div class='read-more-card'><a href='https://medium.com/charity-akita'>Read more articles on Medium.com</a></div>");
                 $("#medium-articles").append($moreLink);
             }
         };
