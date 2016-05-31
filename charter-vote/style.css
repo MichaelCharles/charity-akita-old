@@ -1,0 +1,87 @@
+body {
+    background-color: #F44336;
+}
+
+.no-shadow {
+    box-shadow: none;
+}
+
+nav {
+    height: 10vh;
+    position: relative;
+    z-index: 123101412;
+}
+
+footer {
+    background-color: transparent;
+    color: rgba(255,255,255,0.7);
+    align-self: baseline;
+}
+
+#announce {
+    position: relative;
+    z-index: 100;
+    background-color: #F44336;
+    color: white;
+    overflow: hidden;
+    height: 72vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.announce-content {
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    color: white;
+
+}
+
+.announce-content button {
+    min-width: 150px;
+}
+
+
+.overlay-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 123101411;
+    height:100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.setsume-box {
+    background: white;
+    box-shadow: 0px 4px 8px 0px rgba(33,33,33,0.3);
+    max-width: 600px;
+    padding: 10px 30px 0px 30px;
+}
+
+.eigo-de-no {
+    display: none;
+}
+
+.nihongo-de-no {
+    display: none;
+}
+
+.overlay-box {
+    display: none;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    font-weight: 100;
+    font-size: 134%;
+    margin-top: -10px;
+    margin-right: -10px;
+}
