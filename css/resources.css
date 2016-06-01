@@ -144,3 +144,15 @@ ul.resources li:hover {
     background-color: #eee;
 }
 
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .desktop-only {
+        display: none;
+    }
+    .mobile-only {
+        display: inline-block;
+    }
+}
