@@ -56,7 +56,8 @@ $(document).ready(function () {
                 });
                 if ($postImage.css("background-image") === "") {
                     $postImage.css({
-                        "width": "0px"
+                        "width": "0px",
+                        "height": "0px"
                     })
                     $postContent.css({
                         "width": "100%"
