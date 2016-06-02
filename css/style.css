@@ -107,7 +107,7 @@ nav a:active {
 
 .welcome-content {
 
-    background: #f2f2f2;
+    background: rgba(33,33,33,0.5);
     margin: 0 auto;
     padding: 20px;
     text-align: center;
