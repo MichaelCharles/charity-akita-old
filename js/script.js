@@ -10,7 +10,7 @@ $(document).ready(function () {
         });
         //console.log(postData);
         var buildMediumPosts = function (data, count) {
-        console.log(data);
+            console.log(data);
             if (count === undefined) {
                 count = 0;
             }
@@ -39,7 +39,7 @@ $(document).ready(function () {
                     }
                     else if (preview.type === 4) {
                         $postImage.css({
-                            "background-image": "url('https://cdn-images-1.medium.com/max/500/" + preview.metadata.id +"')"
+                            "background-image": "url('https://cdn-images-1.medium.com/max/500/" + preview.metadata.id + "')"
                         });
                     }
                     else if (preview.type === 3) {
@@ -63,7 +63,7 @@ $(document).ready(function () {
                         "width": "100%"
                     })
                 }
-                
+
                 $postContent.append($articleDate);
                 $("#medium-articles").append($articleCard);
 
@@ -166,4 +166,8 @@ $(document).ready(function () {
             }
         });
     }
+
+
+
+
 });

@@ -45,7 +45,7 @@ div {
  ***************************/
 
 nav {
-    position:relative;
+    position: relative;
     z-index: 9000;
     background-color: #F44336;
     color: white;
@@ -91,7 +91,8 @@ nav a:active {
 /********************************
  * Main
  *******************************/
- 
+
+
 /* WELCOME */
 
 #welcome {
@@ -102,17 +103,14 @@ nav a:active {
     background-position: bottom;
     background-repeat: no-repeat;
     overflow: hidden;
-    
 }
 
 .welcome-content {
-
-    background: rgba(33,33,33,0.5);
+    background: rgba(33, 33, 33, 0.5);
     margin: 0 auto;
     padding: 20px;
     text-align: center;
     color: white;
-    
 }
 
 .welcome-content h1 {
@@ -134,7 +132,7 @@ nav a:active {
     background-color: transparent;
     color: white;
     line-height: 2;
-    border: 1px solid rgba(255,255,255,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     font-weight: 400;
     font-size: 125%;
     text-transform: uppercase;
@@ -147,16 +145,18 @@ nav a:active {
     border: 1px solid white;
 }
 
+
 /* ARTICLES */
+
 
 /*-----------CONTENT WRAP-------------*/
 
 .content-wrapper {
     display: flex;
-    
     max-width: 1000px;
     margin: 0 auto;
 }
+
 
 /*-----------MEDIUM-------------*/
 
@@ -169,11 +169,11 @@ nav a:active {
     margin-left: 1em;
 }
 
-
 #medium-articles {
     margin: 1em;
     margin-right: 0;
-    padding: 1px; /* This is to give the cards something
+    padding: 1px;
+    /* This is to give the cards something
                      to "push against" when margin is
                      added to them on hover. */
 }
@@ -183,7 +183,7 @@ nav a:active {
     z-index: 1000;
     background: white;
     display: flex;
-    box-shadow: 0px 1px 2px 0px rgba(33,33,33,0.3);
+    box-shadow: 0px 1px 2px 0px rgba(33, 33, 33, 0.3);
     margin-bottom: 1px;
     min-height: 150px;
     transition: all 300ms ease;
@@ -205,9 +205,8 @@ nav a:active {
     margin-top: -3px;
     margin-bottom: 4px;
     z-index: 1001;
-    box-shadow: 0px 5px 10px 0px rgba(33,33,33,0.3);
+    box-shadow: 0px 5px 10px 0px rgba(33, 33, 33, 0.3);
 }
-
 
 .article-media {
     background-color: #f9f9f9;
@@ -238,12 +237,12 @@ p.preview-title {
     color: #656565;
 }
 
-p.date{
+p.date {
     padding: 0 15px;
     color: #656565;
     font-size: 75%;
-
 }
+
 
 /*-----------EVENTS-------------*/
 
@@ -254,7 +253,8 @@ p.date{
 
 #facebook-events {
     margin: 1em;
-    padding: 1px; /* This is to give the cards something
+    padding: 1px;
+    /* This is to give the cards something
                      to "push against" when margin is
                      added to them on hover. */
 }
@@ -266,7 +266,7 @@ p.date{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    box-shadow: 0px 1px 2px 0px rgba(33,33,33,0.3);
+    box-shadow: 0px 1px 2px 0px rgba(33, 33, 33, 0.3);
     margin-bottom: 1px;
     transition: all 300ms ease;
 }
@@ -275,7 +275,7 @@ p.date{
     margin-top: -3px;
     margin-bottom: 4px;
     z-index: 1001;
-    box-shadow: 0px 5px 10px 0px rgba(33,33,33,0.3);
+    box-shadow: 0px 5px 10px 0px rgba(33, 33, 33, 0.3);
 }
 
 .event-content {
@@ -296,6 +296,7 @@ p.date{
     font-weight: 700;
     margin-top: 0;
 }
+
 
 /**********************
  * Footer
@@ -336,13 +337,13 @@ footer {
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
     .desktop-tablet-only {
         display: none;
     }
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
     .content-wrapper {
         flex-direction: column;
         flex-wrap: wrap;
@@ -353,11 +354,9 @@ footer {
     .facebook-sidebar {
         width: auto;
     }
-    
     #medium-articles {
         margin-right: 1em;
     }
-    
     .event-media {
         height: 200px;
     }
@@ -380,70 +379,105 @@ footer {
 }
 
 
-
 /******************************
  * Announcement
  *****************************/
- 
- .announcement {
-     max-width: 1000px;
-     margin: 0 auto;
 
- }
- 
- .announcement p {
-     padding: 0 1em;
- }
- 
- .announcement h3 {
-     padding: 0 1em;
- }
- 
- .material-button {
-     color: #212121;
-     transition: all 250ms ease;
-     background-color: #e8e8e8;
-     padding: 1em;
-     text-transform: uppercase;
-     border: 0;
-     box-shadow: 0px 3px 6px 0px rgba(33,33,33,0.3);
-     font-family: "Roboto", Helvetica, san-serif;
-     font-weight: 600;
-     margin: 0.5em 0.5em;
-     border-radius: 3px;
-     font-size: 90%;
-     min-width: 100px;
- }
- 
- .material-button:hover {
-     background-color: #ededed;
-     box-shadow: 0px 6px 10px 0px rgba(33,33,33,0.3);
- }
- 
- .material-button:focus,
- .material-button:active {
-     background-color: #f4f4f4;
-     box-shadow: 0px 6px 10px 0px rgba(33,33,33,0.3);
-     outline: none;
- }
- 
- .material-button i {
-     margin-right: 0.5em;
- }
- 
- .align-right {
-     text-align: right;
- }
- 
- .primary-button {
-     background-color: #536DFE;
-     color: white;
- }
- 
- .primary-button:hover {
-     background-color: #839DFF;
- }
- 
- .primary-button:focus {
-     background-color: #A3BDFF;
- }
+.announcement {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.announcement p {
+    padding: 0 1em;
+}
+
+.announcement h3 {
+    padding: 0 1em;
+}
+
+.material-button {
+    color: #212121;
+    transition: all 250ms ease;
+    background-color: #e8e8e8;
+    padding: 1em;
+    text-transform: uppercase;
+    border: 0;
+    box-shadow: 0px 3px 6px 0px rgba(33, 33, 33, 0.3);
+    font-family: "Roboto", Helvetica, san-serif;
+    font-weight: 600;
+    margin: 0.5em 0.5em;
+    border-radius: 3px;
+    font-size: 90%;
+    min-width: 100px;
+}
+
+.material-button:hover {
+    background-color: #ededed;
+    box-shadow: 0px 6px 10px 0px rgba(33, 33, 33, 0.3);
+}
+
+.material-button:focus,
+.material-button:active {
+    background-color: #f4f4f4;
+    box-shadow: 0px 6px 10px 0px rgba(33, 33, 33, 0.3);
+    outline: none;
+}
+
+.material-button i {
+    margin-right: 0.5em;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.primary-button {
+    background-color: #536DFE;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #839DFF;
+}
+
+.primary-button:focus {
+    background-color: #A3BDFF;
+}
+
+
+
+
+
+.material-spinner {
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    border: 5px transparent solid;
+    border-top: 5px #3F51B5 solid;
+    transform: rotate(0deg);
+    animation: material-spinner 4s infinite;
+}
+
+@keyframes material-spinner {
+    0% {
+        transform: rotate(0deg);
+        border-top: 5px #3F51B5 solid;
+    }
+    25% {
+        transform: rotate(360deg);
+        border-top: 5px #F44336 solid;
+    }
+    50% {
+        transform: rotate(720deg);
+        border-top: 5px #FFC107 solid;
+    }
+    75% {
+        transform: rotate(1080deg);
+        border-top: 5px #4CAF50 solid;
+    }
+    100% {
+        transform: rotate(1440deg);
+        border-top: 5px #3F51B5 solid;
+    }
+}
