@@ -5,6 +5,35 @@
 <html>
 
 <head>
+<script>
+    function paramReader(url) {
+  var queryStart = url.indexOf("?") + 1,
+    queryEnd = url.indexOf("#") + 1 || url.length + 1,
+    query = url.slice(queryStart, queryEnd - 1),
+    pairs = query.replace(/\+/g, " ").split("&"),
+    parms = {},
+    i, n, v, nv;
+
+  if (query.substring(0, 7) === "editors" || query === url || query === "") {
+    return false;
+  }
+
+  for (i = 0; i < pairs.length; i++) {
+    nv = pairs[i].split("=");
+    n = decodeURIComponent(nv[0]);
+    v = decodeURIComponent(nv[1]);
+
+    if (!parms.hasOwnProperty(n)) {
+      parms[n] = [];
+    }
+
+    parms[n].push(nv.length === 2 ? v : null);
+  }
+  return parms;
+
+}
+  var thePage = paramReader(window.location.href);
+</script>
 
     <!-- Page Title -->
     <title>Akita Association of JETs</title>
@@ -26,7 +55,10 @@
     <!-- Facebook -->
     <meta property="og:title" content="Akita Association of JETs">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="http://charityakita.com/img/akita-view.jpg">
+    
+    <script>
+        document.write('<meta property="og:image" content="http://charityakita.com/img/' + thePage + '-preview.jpg">')
+    </script>
     <meta property="og:description" content="Akita Association of JETs (AAJ) is a team of Akita community members who seek to create connections between foreign expats and the wider Japanese community. ">
 
 
@@ -34,7 +66,9 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Akita Association of JETs">
     <meta name="twitter:description" content="Akita Association of JETs (AAJ) is a team of Akita community members who seek to create connections between foreign expats and the wider Japanese community. ">
-    <meta name="twitter:image" content="http://charityakita.com/img/akita-view.jpg">
+    <script>
+        document.write('<meta property="twitter:image" content="http://charityakita.com/img/' + thePage + '-preview.jpg">')
+    </script>
 
     <!-- Normalize.css for cross browser consistency -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css">
