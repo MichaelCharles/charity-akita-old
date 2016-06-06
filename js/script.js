@@ -8,9 +8,9 @@ $(document).ready(function () {
         var postData = $.map(data.payload.references.Post, function (el) {
             return el;
         });
-        //console.log(postData);
+
         var buildMediumPosts = function (data, count) {
-            console.log(data);
+
             if (count === undefined) {
                 count = 0;
             }

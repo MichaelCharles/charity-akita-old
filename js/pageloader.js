@@ -50,7 +50,11 @@ function buildPageList(data, $pageList, index) {
   }
   if (data[index]){
     if (!data[index].hidden) {
-    var $listItem = $("<li><a href='../pages/?p=" + data[index].filename + "'>" + data[index].title + "</a></li>");
+    var listItemURL = "../pages/?p=" + data[index].filename
+    if (listItemURL === "../pages/?p=absolute") {
+      listItemURL = data[index].url;
+    }
+    var $listItem = $("<li><a href='" + listItemURL + "'>" + data[index].title + "</a></li>");
     $pageList.append($listItem);
     }
     index = index + 1;
@@ -63,18 +67,20 @@ function buildPageList(data, $pageList, index) {
 $("document").ready(function(){
     var urlParams = parseURLParams(window.location.href);
 
-    $.getJSON("valid-pages.json", function(data){
+    $.getJSON("http://charityakita.com/pages/valid-pages.json", function(data){
 
     if (urlParams.p) {
         var pageData = getPageData(urlParams.p, data.pages);
+        
         if (pageData){
+          
         $(".paper-title h3").html(pageData.title);
         $(".content-render-area").attr("w3-include-html", pageData.filename);
         w3IncludeHTML();
         } else {
           $(".paper-title h3").html("Invalid Page Query");
           $(".content-render-area").html("The page you were looking for cannot be found. Where you perhaps looking for one of these?");
-          $pageList = buildPageList(data.pages);
+          var $pageList = buildPageList(data.pages);
           $(".content-render-area").append($pageList);
         } 
     } else {

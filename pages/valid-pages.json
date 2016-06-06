@@ -15,6 +15,12 @@
     }, 
     {
         "filename": "contact",
-        "title": "Contact Us"
+        "title": "Contact Us",
+        "hidden": "true"
+    },
+    {
+        "filename": "absolute",
+        "title": "Home",
+        "url": "http://charityakita.com"
     }]
 }
