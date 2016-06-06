@@ -40,35 +40,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages.css">
 
 
     <script src="https://use.fontawesome.com/9ae522a20e.js"></script>
 </head>
 
 <body>
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '1925408434352308',
-                xfbml: true,
-                version: 'v2.5'
-            });
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) {
-                return;
-            }
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-
 
     <div id="flex-wrap">
         <nav>
@@ -87,94 +66,24 @@
             </ul>
         </nav>
         <main>
-            <div id="welcome">
-                <div class="welcome-content">
-                    <h1>
-                    Welcome
-                    </h1>
-                    <p>
-                        Akita Association of JETs (AAJ) (<span class="ja">秋田ＪＥＴ参加者の会</span>) is a team of Akita community members who seek to create connections between foreign expats and the wider Japanese community. We organize fundraising events for
-                        charities, create events to welcome newcomers into Akita prefecture, and otherwise seek to work towards grassroots internationalization by forming meaningful relationships. For more information, contact the AAJ team at AkitaAAJ@gmail.com.
-                    </p>
-                    <button id="contact-button">Contact Us</button>
+            <div class="nav-extend">
+                <div class="paper-title">
+                    <h3></h3>
                 </div>
             </div>
 
-            <div class="announcement">
-                <h3>Announcement</h3>
-                <p>We are excited to announce that we will be voting on the adoption of a charter. Voting will open on Monday June 6 and close on the following Monday, June 13. Those interested in voting should read the charter draft and then submit their
-                    email. Instructions for how to vote will be sent on Monday June 6.</p>
-                <p class="align-right">
-                    <a href="docs/Charity%20Akita%20Charter%20(JA).pdf" target="_blank">
-                        <button class="material-button ja"><i class="fa fa-file-text" aria-hidden="true"></i>Charter（Japanese）</button>
-                    </a>
-                    <a href="docs/Charity%20Akita%20Charter.pdf" target="_blank">
-                        <button class="material-button"><i class="fa fa-file-text" aria-hidden="true"></i>Charter (English)</button>
-                    </a>
-                    <a href="http://goo.gl/forms/tyEwrXi79PvzaNRg2" target="_blank">
-                        <button class="material-button primary-button">Sign up to Vote</button>
-                    </a>
-                </p>
-            </div>
-
-
-
-            <div class="content-wrapper">
-
-
-
-                <div class="articles">
-                    <h3 class="section-header">News</h3>
-                    <div id="medium-articles">
-                        <div class="loading medium-loading material-spinner"></div>
-
-                        <!----- Article Model-------------------
-                        <a href="#" class="article-card">
-                            <div class="article-media">
-                                
-                            </div>
-                            <div class="article-content">
-                                <h3>Article Title</h3>
-                                <p>Article Description</p>
-                            </div>
-                        </a>
-                        --------------------------------------->
-
-
+            <div class="paper-wrapper">
+                <div class="paper-content">
+                    <div class="content-render-area" w3-include-html="">
+                        
                     </div>
                 </div>
-                <div class="facebook-sidebar">
-                    <h3 class="section-header">Events</h3>
-                    <div id="facebook-events">
-                        <div class="loading facebook-loading material-spinner"></div>
-
-
-                        <!----- Event Model-------------------
-                        <a href="#" class="event-card">
-                            <div class="event-media">
-                                
-                            </div>
-                            <div class="event-content">
-                                <h3>Event Title</h3>
-                                <p>This is a description of the event. It will probably be longer than the article descriptions</p>
-                            </div>
-                        </a>
-                        ------------------------------------->
-
-
-
-
-                    </div>
-                </div>
-
             </div>
-            <div class="archive-notice">
-                <p class="archive-notice-text">On May 19, 2016 we moved to using Medium as our blogging platform. An archive of the posts from the old website blog can be found <a href="http://charityakita.com/archive">here</a>.</p>
-            </div>
+
         </main>
 
         <footer>
-            Copyright &copy; 2011-2016 <span class="desktop-tablet-only">Akita Association of JETs</span><span class="phone-only">AAJ</span>
+            Copyright &copy; 2016 <span class="desktop-tablet-only">Akita Association of JETs</span><span class="phone-only">AAJ</span>
         </footer>
     </div>
     <!-- Load third party JavaScript frameworks or libraries. -->
@@ -204,8 +113,8 @@
     </script>
 
     <!-- Custom JavaScript -->
-    <script src="js/happy-medium.js"></script>
-    <script src="js/script.js"></script>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script src="../js/pageloader.js"></script>
 
 </body>
 

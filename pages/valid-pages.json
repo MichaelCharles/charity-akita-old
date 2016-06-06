@@ -1,0 +1,20 @@
+{
+    "pages": [{
+        "filename": "finances",
+        "title": "Public Financial Record"
+    }, 
+    {
+        "filename": "about",
+        "title": "About Charity Akita",
+        "hidden": true
+    }, 
+    {
+        "filename": "board",
+        "title": "Board of Directors",
+        "hidden": true
+    }, 
+    {
+        "filename": "contact",
+        "title": "Contact Us"
+    }]
+}
