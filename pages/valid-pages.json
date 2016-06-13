@@ -5,16 +5,15 @@
     }, 
     {
         "filename": "about",
-        "title": "About Charity Akita",
+        "title": "About Charity Akita"
     }, 
     {
         "filename": "board",
-        "title": "Board of Directors",
-        "hidden": true
+        "title": "Board of Directors"
     }, 
     {
         "filename": "contact",
-        "title": "Contact Us",
+        "title": "Contact Us"
     },
     {
         "filename": "absolute",
