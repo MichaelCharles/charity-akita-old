@@ -6,7 +6,6 @@
     {
         "filename": "about",
         "title": "About Charity Akita",
-        "hidden": true
     }, 
     {
         "filename": "board",
@@ -16,7 +15,6 @@
     {
         "filename": "contact",
         "title": "Contact Us",
-        "hidden": "true"
     },
     {
         "filename": "absolute",
