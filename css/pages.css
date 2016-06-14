@@ -9,6 +9,7 @@ body {
     position: relative;
     z-index: 9001;
     padding: 25px 10px 0em 10px;
+    margin-top: -3px;
 }
 
 .paper-title {
@@ -44,4 +45,8 @@ body {
 main {
     background-color: #f2f2f2;
     min-height: 70vh;
+}
+
+nav {
+    box-shadow: none;
 }
