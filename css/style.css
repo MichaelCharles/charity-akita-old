@@ -91,7 +91,16 @@ nav ul {
 
 nav li {
     display: inline;
+    margin: 0 16px;
 }
+
+nav li.icon i {
+    font-size: 24px;
+    position: relative;
+    top: 3px;
+    display: none;
+}
+
 
 nav a:link,
 nav a:visited,

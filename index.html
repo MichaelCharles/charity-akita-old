@@ -42,7 +42,9 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 
-
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
     <script src="https://use.fontawesome.com/9ae522a20e.js"></script>
 </head>
 
@@ -79,21 +81,40 @@
     </h1>
             </header>
             <ul>
+                <li class="icon">
+                    <a href="https://medium.com/charity-akita">
+                        <i class="preload-font fa fa-medium" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="https://facebook.com/charityakita">
+                        <i class="preload-font fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="https://twitter.com/charityakita">
+                        <i class="preload-font fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
                 <li>
-                    <a href="ja">
+                    <a href="ja" class="ja">
             日本語
             </a>
                 </li>
             </ul>
         </nav>
+        <script>
+            setTimeout(function(){
+                $(".preload-font").show();
+            }, 1000);
+        </script>
         <main>
             <div id="welcome">
                 <div class="welcome-content">
                     <div class="content-wrap">
 
                                 <p>
-                                    <strong>Charity Akita</strong> is a charity fundraising and volunteer organization comprised of ALTs and residents of Akita who strive to create connections between foreign expats and the wider Japanese community. We organize fundraising events for charities,
-                                    create events to welcome newcomers into Akita prefecture, and otherwise seek to work towards grassroots internationalization by forming meaningful relationships.
+                                    <strong>Charity Akita</strong> is a charity fundraising and volunteer organization comprised of ALTs and residents of Akita who organize fundraiser events for charities, create events to welcome newcomers into Akita prefecture, and otherwise seek to work towards grassroots internationalization.
                                 </p>
                         <div class="welcome-flex">
                             <div class="update-box">
@@ -181,11 +202,7 @@
     </div>
     <!-- Load third party JavaScript frameworks or libraries. -->
 
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-    <!-- Material Design Lite -->
-    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
 
     <!-- Google Analytics -->
     <script>
