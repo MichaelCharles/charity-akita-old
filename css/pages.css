@@ -55,7 +55,7 @@ nav {
     background: #f44336;
     position: absolute;
     z-index: 50000;
-    width: 100vw;
+    width: 100%;
     left: 0;
     height: 10px;
     margin-top: -7px;
