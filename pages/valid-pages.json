@@ -6,7 +6,7 @@
     }, {
         "filename": "about",
         "title": "About Charity Akita",
-        "hidden": true
+        "hidden": false
     }, {
         "filename": "finances",
         "title": "Public Financial Record",
