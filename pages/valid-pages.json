@@ -14,7 +14,7 @@
     }, {
         "filename": "board",
         "title": "Board of Directors",
-        "hidden": true
+        "hidden": false
     }, {
         "filename": "contact",
         "title": "Contact Us",
