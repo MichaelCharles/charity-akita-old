@@ -1,130 +1,149 @@
 <!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="UTF-8">
-    <title>Halloween 2016</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Fav Icon -->
-    <link rel="icon" type="image/png" href="http://res.cloudinary.com/mca62511/image/upload/c_scale,h_350,r_50,w_350/v1465775559/caintertwined_njjxkm.png">
+<html>
 
-    <!-- Google -->
-    <meta name="description" content="Charity Akita is a charity fundraising and volunteer organization comprised of ALTs and residents of Akita.">
-    <meta name="keywords" content="aaj, akita, association, jets, charity, fundraising, halloween, patricks, party">
-    <meta name="application-name" content="Charity Akita">
+<head>
+  <meta charset="UTF-8">
+  <title>Halloween 2016</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/png" href="http://res.cloudinary.com/mca62511/image/upload/c_scale,h_350,r_50,w_350/v1465775559/caintertwined_njjxkm.png">
 
-
-    <!-- Facebook -->
-    <meta property="og:title" content="2016 Halloween Dance Party">
-    <meta property="og:type" content="article">
-    <meta property="og:image" content="http://res.cloudinary.com/mca62511/image/upload/v1473230473/widehouse_j9zlmq.png">
-    <meta property="og:description" content="2016 Halloween Dance Party hosted by Charity Akita. Charity Akita is a charity fundraising and volunteer organization comprised of ALTs and residents of Akita.">
+  <!-- Google -->
+  <meta name="description" content="Charity Akita is a charity fundraising and volunteer organization comprised of ALTs and residents of Akita.">
+  <meta name="keywords" content="aaj, akita, association, jets, charity, fundraising, halloween, patricks, party">
+  <meta name="application-name" content="Charity Akita">
 
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="2016 Halloween Dance Party">
-    <meta name="twitter:description" content="2016 Halloween Dance Party hosted by Charity Akita. Charity Akita is a charity fundraising and volunteer organization comprised of ALTs and residents of Akita.">
-    <meta name="twitter:image" content="http://res.cloudinary.com/mca62511/image/upload/v1473230473/widehouse_j9zlmq.png">
+  <!-- Facebook -->
+  <meta property="og:title" content="2016 Halloween Dance Party">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="http://res.cloudinary.com/mca62511/image/upload/v1473230473/widehouse_j9zlmq.png">
+  <meta property="og:description" content="2016 Halloween Dance Party hosted by Charity Akita. Charity Akita is a charity fundraising and volunteer organization comprised of ALTs and residents of Akita.">
 
-    <link rel="stylesheet" href="../css/normalize.css">
 
-<style>
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="2016 Halloween Dance Party">
+  <meta name="twitter:description" content="2016 Halloween Dance Party hosted by Charity Akita. Charity Akita is a charity fundraising and volunteer organization comprised of ALTs and residents of Akita.">
+  <meta name="twitter:image" content="http://res.cloudinary.com/mca62511/image/upload/v1473230473/widehouse_j9zlmq.png">
+
+  <link rel="stylesheet" href="../css/normalize.css">
+
+  <style>
 body {
-  background-color: white;
-  color: white;
-  overflow-x: hidden;
+    background-color: white;
+    color: white;
+    overflow-x: hidden;
+}
+
+a {
+    color: #f26c1d;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover {
+    color: orange;
+    
 }
 
 .house-image {
-  background-image: url("http://res.cloudinary.com/mca62511/image/upload/c_scale,w_1000/v1473230473/widehouse_j9zlmq.png");
-  background-size: cover;
-  background-position: center;
-  height: 312px;
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
-  text-align: right;
+    background-image: url("http://res.cloudinary.com/mca62511/image/upload/c_scale,w_1000/v1473230473/widehouse_j9zlmq.png");
+    background-size: cover;
+    background-position: center;
+    height: 312px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: right;
 }
 
 .house-image img {
-  max-width: 600px;
-  width: 100%;
+    max-width: 600px;
+        width: 100%;
 }
 
 .house-header {
-  background-color: #2d7162;
-  width: 100%;
+    background-color: #2d7162;
+    width: 100%;
+
 }
 
 .container {
-  width: 100%;
+    width: 100%;
 }
 
 .black-container {
-  background-color: #232026;
-  overflow: hidden;
+    background-color: #232026;
+    overflow: hidden;
 }
 
 .white-container {
-  background: white;
+    background: white;
 }
 
 .white-container .content {
-  background: white;
-  color: black;
+    background: white;
+    color: black;
 }
 
 .content {
-  max-width: 600px;
-  margin: 0px auto;
-  padding: 25px;
+    max-width: 600px;
+    margin: 0px auto;
+    padding: 25px;
 }
 
 .gate {
-  position: fixed;
-  height: 600px;
-  top: 0;
+    position: fixed;
+    height: 600px;
+    top: 0;
 }
 
 .left-gate {
-  left: 0;
+    left: 0;
+    height: 100vh;
 }
-
 .right-gate {
-  right: 0;
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
+    height: 100vh;
+    right: 0;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
 }
 
-@media (max-width: 600px) {
-  .house-image {
-    height: 200px;
-  }
+@media (max-width: 950px) {
+    .house-image {
+        
+        height: 200px;
+    }
+    .house-image img {
+        position: relative;
+        margin-left: 15%;
+        max-width: 400px;
+    }
+    .gate {
+        display: none;
+    }
+}
 
-  .house-image img {
-    position: relative;
-    margin-left: 15%;
-    max-width: 400px;
-  }
-
-  .gate {
+.japanese-link {
     display: none;
-  }
 }
 
-</style>
-    
-    
-    
-  </head>
+.en {
+    display: none;
+}
+  </style>
 
-  <body>
 
-    <img class="gate left-gate" src="http://res.cloudinary.com/mca62511/image/upload/c_scale,w_200/v1473232241/agate_czk58r.png">
+
+</head>
+
+<body>
+<img class="gate left-gate" src="http://res.cloudinary.com/mca62511/image/upload/c_scale,w_200/v1473232241/agate_czk58r.png">
 <img class="gate right-gate" src="http://res.cloudinary.com/mca62511/image/upload/c_scale,w_200/v1473232241/agate_czk58r.png">
 <div class="house-header">
 <div class="house-image">
@@ -134,20 +153,103 @@ body {
 
 <div class="container black-container">
     <div class="content">
-        <h1>Lorem Ipsum Spooky Night</h1>
-        <p>Breathing heavily hell and rabid anthrax fanatic tearing at a squeal. Trapped flesh grotesque squeal, bloodcurdling chilling hair-raising spooky hazardous daring. chainsaw dread full moon, pushed at alley bruises, children is knife. Psycho crazy mental hospital moon. Creep serial killer, bury a scourge menacing, pain bowels nightmare. Edginess anxiety tension, claw at deteriorated in, creep a tear. Mental hospital sliced drowning. Occult at alley pushed. In the deranged Hallowee.</p>
+        <p style="text-align: center"><a class="english-link ja" href="#">English</a><a class="japanese-link en" href="#">日本語</a> &nbsp;&nbsp;&nbsp; <a class="ja" href="https://www.facebook.com/events/205032286575262">Facebookのイベントページ</a><a class="en" href="https://www.facebook.com/events/205032286575262">Facebook Event Page</a> &nbsp;&nbsp;&nbsp; <a class="ja" href="mailto:charityakita@gmail.com">お問い合わせ</a><a class="en" href="mailto:charityakita@gmail.com">Contact Us</a></p>
+<span class="ja">
+<p>今年も毎年恒例のハロウィンパーティーを開催します！
+ギョッとするような仮装とマスクで一緒にハロウィンをお祝いしましょう！</p>
+<p>主催：Charity Akita</p>
+<p>日時：10月29日（土）午後9時～</p>
+<p>場所：Club Jamhouse （秋田市）</p>
+<p>料金：</p>
+<ul>
+<li>
+<p>2,500円</p>
+</li>
+<li>
+<p>学生　2,000円（要ＩＤ）</p>
+</li>
+<li>
+<p>ボランティア＆ＤＪｓ　1,500円</p>
+</li>
+<li>
+<p>※クジ1枚　100円（入口で販売）</p>
+</li>
+</ul>
+<p>チャリティー募金先：BLUE FOR TOHOKU</p>
+<p>地元人、外国人のＤＪ達が夜な夜な素敵な音楽を繰り広げてくれます。
+Jamhouseでは様々な飲み物を提供してくれるので思う存分楽しめます。
+また、当イベントへの飲み物の持ち込みは固く禁じさせて頂きます。</p>
+<p>入口で販売されるクジは午前12時に抽選を開始します。
+賞金の50％は勝者へ賞金として、50％はあきた冒険遊びfrogへ寄付されます。
+あきた冒険遊びfrogリンクはコチラ
+http://akitafrog.wix.com/frog</p>
+<p>その後、仮装コンテストが引き続き行われます。
+どなたでも参加ＯＫ！イベント参加者みんなで誰の仮装が一番かを決めます。
+優勝者には素敵な景品が用意されます。</p>
+<p>今年の収益金は日本のＮＰＯ団体　BLUE FOR TOHOKUへ募金されます。
+この団体は2011年の東日本大震災をきっかけに発足されました。震災遺児を含む児童養護施設への支援を行うＮＰＯです。
+BLUE FOR TOHOKUリンクはコチラ
+http://bluefortohoku.jp/</p>
+<p>ボランティア：イベントの準備等を手伝ってくれる人を募集中！！
+興味のある人はcharityakita@gmail.comまでご連絡ください。
+特に、イベントの準備、片づけ、ドア係、ＤＪ（要経験者）を募集しています。
+ボランティアの人は入場料金が1,000円引になります。</p>
+<p>このイベントは秋田の地域と他国を結ぶ楽しいイベントです。
+ただし、未成年者の入場はお断りしております。</p>
+
+        </span>
+        <span class="en">
+            <h1>Join us for frightfully ghoulish fun.</h1>
+<p>Boys and ghouls, you are invited to our annual spook-tacular event, the Halloween Dance Party! Prepare your costumes, masks, and makeup for an event you don’t want to miss!</p>
+<ul>
+    <li>Ghost Host: <a href="http://charityakita.com" target="_blank">Charity Akita</a></li>
+<li>Bewitching Hour: Saturday, October 29th, 9:00 PM</li>
+<li>Harrowing Haunt: <a href="http://www.jamhouse-akita.com/" target="blank" target="_blank">Club Jamhouse in Akita City</a></li>
+    <li>Proceeds will be donated to: <a href="http://bluefortohoku.jp/">BLUE FOR TOHOKU</a></li>
+</ul>
+<p>Price of admission:</p>
+<ul>
+<li>Regular Entry: ¥2,500 yen</li>
+<li>Students (with ID): 2,000 yen</li>
+<li>Volunteers/DJs: 1,500 yen</li>
+</ul>
+<p>Raffle Tickets: 100 yen each (at the door)</p>
+<p><strong>This event is for adults 20 years and older. You must bring a form of ID for verification. Those without an ID will be turned away at the door.</strong></p>
+            <h3><a href="https://www.facebook.com/events/205032286575262" target="_blank">Let us know you are coming on our Facebook event page!</a></h3>
+<h2>Venue</h2>
+<p>We'll be celebrating this year at our usual haunt, Club Jamhouse in Akita City! Doors will open at 9:00 PM! DJs, both local and foreign, will be spinning monster mashes all night long. Jamhouse also provides a fully stocked professional bar serving any and all beverages you can imagine! <strong>We kindly ask that you do NOT bring outside beverages into the venue.</strong></p>
+<h2>Contests</h2>
+<p>Tickets for the <strong>50/50 raffle contest</strong> will be sold at the door for 100 yen. The raffle winner will be announced at 12:00 AM and will receive half the money as a prize! The other half of the money will be donated to あきた冒険遊びfrog (AkitaFrog). Check out their website, http://akitafrog.wix.com/frog .</p>
+<p>Following the raffle the annual <strong>costume contest</strong> will be held! Anyone can enter and the party goers will vote on whose costume they like the best. The winner of the costume contest will receive a spooky great prize!</p>
+<h2>Charity</h2>
+<p>This year's proceeds will be donated to the Japanese non-profit organization BLUE FOR TOHOKU. This organization was created after the Great East Japan Earthquake in 2011. They raise money and awareness to support orphanages and children throughout Tohoku that were directly impacted by the quake. Check out their website, http://bluefortohoku.jp/english.html .</p>
+<h2>Volunteer Opportunities</h2>
+<p>If you’re interested in helping Charity Akita prepare for or work on the Halloween Party, please email charityakita@gmail.com OR post to this event wall OR message @Domo Ari. We're currently looking for volunteers to help with set-up, clean-up, door shifts, and DJ (experience preferred). All volunteers will receive 1,000 yen OFF their admission price!!</p>
+
+        
+        </span>
+            
     </div>
 </div>
 <div class="container white-container">
     <div class="content">
-        <h1>Lorem Ipsum What a Fright</h1>
-        <p>Creep serial killer, bury a scourge menacing, pain bowels nightmare. Edginess anxiety tension, claw at deteriorated in, creep a tear. Suicide Slash demon at convulsing darkness a evil pain burn. Blood ashes tearing in drowning spooky at fanatic with murderer. Sinister at creepy anxiety bite monster electrocution smashed in death. Eerie needles edginess, graveyard on death rotten, disturbing non grave. Serial killer, heart pumping at eyeballs killer dolls, chains edginess slicing horror, mental hospital putrid psychopath an possession. Haun.</p>
+        <p>Copyright &copy; 2016 Charity Akita</p>
     </div>
 </div>
-    
-    
-    
-    
-    
-  </body>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+  $("document").ready(function () {
+
+    $(".english-link").click(function () {
+      $(".en").toggle();
+      $(".ja").toggle();
+    });
+    $(".japanese-link").click(function () {
+      $(".en").toggle();
+      $(".ja").toggle();
+    });
+  });
+</script>
+
 </html>
