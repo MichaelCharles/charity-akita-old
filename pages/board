@@ -1,1 +1,8 @@
-<iframe src="https://docs.google.com/document/d/112y6tp7koZOWATnmmKXt0MZhP2-bLrO2mxIBun0nDGc/pub?embedded=true"></iframe>
+<style>
+.document-frame {
+    width: 100%;
+    border: 0;
+    height: 400px;
+}
+</style>
+<iframe class="document-frame" src="https://docs.google.com/document/d/112y6tp7koZOWATnmmKXt0MZhP2-bLrO2mxIBun0nDGc/pub?embedded=true"></iframe>
