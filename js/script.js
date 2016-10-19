@@ -4,7 +4,7 @@
 var eventExceptions = [{
     eventTitle: "Charity Akita Halloween PARTY 2016",
     newTitle: "Halloween Party",
-    newDescription: "Click hear to learn more!<br> ハロウィーンパーティーについての詳細 は こちら を クリック。",
+    newDescription: "Click hear to learn more!<br> ハロウィーンパーティーについての詳細はこちらをクリック。",
     newLink: "http://charityakita.com/halloween"
 },{
     eventTitle: "TEST TITLE",
