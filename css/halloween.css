@@ -17,3 +17,30 @@ a:hover {
 nav {
     background-color: #FF9800;
 }
+
+/*****************************
+* JUMBOTRON
+*****************************/
+
+#welcome {
+    background-image: url("http://res.cloudinary.com/mca62511/image/upload/v1476886510/halloween_collage_black_border_nrqfzj.jpg");
+}
+
+.halloween-welcome {
+    background: #211f26;
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.video-frame {
+    margin: 0 auto;
+    max-width: 560px;
+    max-height: 315px;
+    width: 100%;
+    height: 315px;
+}
+
+.video-frame iframe {
+    width: 100%;
+}
