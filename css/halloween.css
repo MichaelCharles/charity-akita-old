@@ -1,0 +1,19 @@
+a:link,
+a:active,
+a:visited {
+    color: #9C27B0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #CC57E0;
+}
+
+
+/***************************
+ * HEADER
+ ***************************/
+
+nav {
+    background-color: #FF9800;
+}
