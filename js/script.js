@@ -1,6 +1,18 @@
 /* global $ */
 /* global happyMedium */
 
+var eventExceptions = [{
+    eventTitle: "Charity Akita Halloween PARTY 2016",
+    newTitle: "Halloween Party",
+    newDescription: "Click hear to learn more!<br> ハロウィーンパーティーについての詳細 は こちら を クリック。",
+    newLink: "http://charityakita.com/halloween"
+},{
+    eventTitle: "TEST TITLE",
+    newTitle: "NEW TEST TITLE",
+    newDescription: "IF YOU READ THIS ON THE WEBSITE, SOMETHING HAS GONE HORRIBLY TERRIBLY WRONG",
+    newLink: "http://example.com"
+}];
+
 $(document).ready(function () {
     "use strict";
     happyMedium("https://medium.com/charity-akita", function (data) {
@@ -114,8 +126,21 @@ $(document).ready(function () {
                         var thisEvent = data[count];
 
                         if (thisEvent && count < 3) {
-
-                            var $eventCard = $('<a href="https://www.facebook.com/events/' + thisEvent.id + '" class="event-card"></a>');
+                            for (var i=0; i < eventExceptions.length; i++) {
+                                var tX = eventExceptions[i];
+                                if (thisEvent.name === tX.eventTitle) {
+                                    console.log(tX);
+                                    thisEvent.name = tX.newTitle;
+                                    thisEvent.description = tX.newDescription;
+                                    thisEvent.link = tX.newLink;
+                                }
+                            }
+                            
+                            if (thisEvent.link) {
+                                var $eventCard = $('<a href="http://charityakita.com/halloween" class="event-card"></a>')
+                            } else {
+                                var $eventCard = $('<a href="https://www.facebook.com/events/' + thisEvent.id + '" class="event-card"></a>');
+                            }
                             var $eventContent = $('<div class="event-content"></div>');
                             var $eventTitle = $('<h3></h3>');
                             var $eventDate = $('<p class="event-date"></p>');
