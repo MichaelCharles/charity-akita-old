@@ -44,3 +44,17 @@ nav {
 .video-frame iframe {
     width: 100%;
 }
+
+
+.spooky-button {
+    background-color: #9C27B0;
+    color: white;
+}
+
+.spooky-button:hover {
+    background-color: #BC47D0;
+}
+
+.spooky-button:focus {
+    background-color: #DC67F0;
+}
