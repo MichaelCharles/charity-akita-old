@@ -58,3 +58,28 @@ nav {
 .spooky-button:focus {
     background-color: #DC67F0;
 }
+
+.content-wrapper {
+    background: #212121;
+    color: white;
+}
+
+.event-card,
+.article-card {
+    color: white;
+    background: black;
+}
+
+.event-card h3,
+.article-card h3 {
+    color: #FF9800;
+}
+
+.event-card p,
+.article-card p {
+    color: #FFE0B2;
+}
+
+main {
+    background: #212121;
+}
