@@ -15,6 +15,10 @@ a:hover {
  ***************************/
 
 nav {
+    transition: all 2s ease;
+}
+
+.orange-background {
     background-color: #FF9800;
 }
 
