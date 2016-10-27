@@ -1,12 +1,12 @@
 a:link,
 a:active,
 a:visited {
-    color: #9C27B0;
+    color: #CC57E0;
     text-decoration: none;
 }
 
 a:hover {
-    color: #CC57E0;
+    color: #E1BEE7;
 }
 
 
@@ -60,14 +60,18 @@ nav {
 }
 
 .content-wrapper {
-    background: #212121;
+    background: #333;
     color: white;
 }
 
 .event-card,
 .article-card {
     color: white;
-    background: black;
+    background: #212121;
+}
+
+.article-media {
+    background-color: #292929;
 }
 
 .event-card h3,
@@ -81,5 +85,11 @@ nav {
 }
 
 main {
-    background: #212121;
+    background: #333;
+}
+
+
+
+.archive-notice-text {
+    color: #aaa;
 }
