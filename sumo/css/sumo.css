@@ -57,6 +57,7 @@ div {
     position: relative;
     z-index: 100;
     background-image: url("/sumo/img/purple.jpg");
+    background-color: #ce95d9;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
