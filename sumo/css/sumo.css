@@ -246,3 +246,61 @@ iframe {
 #volunteer-content {
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+/*******************************
+/*        Material Button
+/********************************/
+
+.material-button {
+    color: #212121;
+    transition: all 250ms ease;
+    background-color: #e8e8e8;
+    padding: 1em;
+    text-transform: uppercase;
+    border: 0;
+    box-shadow: 0px 3px 6px 0px rgba(33, 33, 33, 0.3);
+    font-family: "Roboto", Helvetica, san-serif;
+    font-weight: 600;
+    margin: 0.5em 0.5em;
+    border-radius: 3px;
+    font-size: 90%;
+    min-width: 100px;
+}
+
+.material-button:hover {
+    background-color: #ededed;
+    box-shadow: 0px 6px 10px 0px rgba(33, 33, 33, 0.3);
+}
+
+.material-button:focus,
+.material-button:active {
+    background-color: #f4f4f4;
+    box-shadow: 0px 6px 10px 0px rgba(33, 33, 33, 0.3);
+    outline: none;
+}
+
+.material-button i {
+    margin-right: 0.5em;
+}
+
+.primary-button {
+    background-color: #536DFE;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #839DFF;
+}
+
+.primary-button:focus {
+    background-color: #A3BDFF;
+}
