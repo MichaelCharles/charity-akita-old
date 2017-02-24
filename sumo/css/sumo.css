@@ -42,8 +42,13 @@ div {
 }
 
 #main-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     min-height: 100vh;
 }
 
@@ -67,8 +72,14 @@ div {
 
 .banner .top-bar {
     
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
 }
 
@@ -167,6 +178,8 @@ nav a:hover {
 /*-----------CONTENT WRAP-------------*/
 
 main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 1000px;
     margin: 0 auto;
@@ -192,7 +205,8 @@ main .content {
  **********************/
 
 footer {
-    align-self: baseline;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
     background-color: #666;
     color: #ddd;
     overflow: hidden;
@@ -262,6 +276,7 @@ iframe {
 
 .material-button {
     color: #212121;
+    -webkit-transition: all 250ms ease;
     transition: all 250ms ease;
     background-color: #e8e8e8;
     padding: 1em;

@@ -28,8 +28,13 @@ a:hover {
 }
 
 #flex-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     min-height: 100vh;
     background: pink;
 }
@@ -48,13 +53,21 @@ nav {
     padding: 0 2em;
     line-height: 2;
     box-shadow: 0px 5px 10px 0px rgba(33, 33, 33, 0.3);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 header img {
@@ -88,14 +101,22 @@ nav a:active {
  *******************************/
  
  main {
-     flex-grow: 2;
+     -webkit-box-flex: 2;
+         -ms-flex-positive: 2;
+             flex-grow: 2;
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
  }
  
 /* WELCOME */
 
 #welcome {
-    flex-grow: 2;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     z-index: 100;
@@ -108,7 +129,9 @@ nav a:active {
 }
 
 .welcome-content {
-    flex-grow: 2;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
     background: rgba(33,33,33,0.5);
     margin: 0 auto;
     padding: 20px;
@@ -180,7 +203,8 @@ button:hover {
  **********************/
 
 footer {
-    align-self: baseline;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
     background-color: #666;
     color: #ddd;
     overflow: hidden;
