@@ -133,6 +133,7 @@ div {
     margin: 0;
     padding: 0;
     display: block;
+    visibility: hidden;
 }
 
 nav {
