@@ -62,6 +62,11 @@ $(document).ready(function () {
                         var $postPreviewTitle = $("<p class='preview-title'>" + preview.text + "</p>");
                         $postContent.append($postPreviewTitle);
                     }
+                    else if (preview.type === 7) {
+                        $postImage.css({
+                            "background-image": "url('https://cdn-images-1.medium.com/max/500/" + preview.metadata.id + "')"
+                        });
+                    }
                     else {
                         throw new Error("Unrecognized preview content type: " + preview.type);
                     }
