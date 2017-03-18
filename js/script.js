@@ -63,9 +63,7 @@ $(document).ready(function () {
                         $postContent.append($postPreviewTitle);
                     }
                     else if (preview.type === 7) {
-                        $postImage.css({
-                            "background-image": "url('https://cdn-images-1.medium.com/max/500/" + preview.metadata.id + "')"
-                        });
+                        /* add code to handle it later */
                     }
                     else {
                         throw new Error("Unrecognized preview content type: " + preview.type);
