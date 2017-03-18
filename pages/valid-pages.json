@@ -19,5 +19,9 @@
         "filename": "contact",
         "title": "Contact Us",
         "hidden": true
+    },{
+        "filename": "absolute",
+        "title": "Sumo",
+        "url": "http://charityakita.com/sumo"
     }]
 }
