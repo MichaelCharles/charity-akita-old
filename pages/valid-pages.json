@@ -22,6 +22,7 @@
     },{
         "filename": "absolute",
         "title": "Sumo",
-        "url": "http://charityakita.com/sumo"
+        "url": "http://charityakita.com/sumo",
+        "hidden": true
     }]
 }
