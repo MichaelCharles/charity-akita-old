@@ -1,0 +1,250 @@
+<!doctype html>
+<!-- Tekkamikey Boilerplate developed
+	 and designed by MichaelCharl.es/Aubrey -->
+
+<!--- Japanese --->
+
+<html>
+
+
+<head>
+
+    <!-- Page Title -->
+    <title>第１３回秋田県国際相撲大会</title>
+
+    <meta charset="UTF-8">
+
+    <!-- Viewport for a responsive mobile first site. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fav Icon -->
+    <link rel="icon" type="image/png" href="http://res.cloudinary.com/mca62511/image/upload/c_scale,r_1000,w_200/v1491459198/mysumoicon_ecarss.png">
+
+    <!-- Google -->
+    <meta name="description" content="日本に住む外国人が日本の国技に挑戦！もちろん日本人の参加者も大歓迎！2005年から異文化交流と慈善事業を目的に始まった恒例イベントが今年も開催されます！">
+    <meta name="keywords" content="相撲, 国際, チャリティー, 武道館, sumo, international, tournament, aaj, akita, association, jets, charity, fundraising">
+    <meta name="application-name" content="第１３回秋田県国際相撲大会">
+
+
+    <!-- Facebook -->
+    <meta property="og:title" content="第１３回秋田県国際相撲大会">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://charityakita.com/sumo/img/purple.jpg">
+    <meta property="og:description" content="日本に住む外国人が日本の国技に挑戦！もちろん日本人の参加者も大歓迎！2005年から異文化交流と慈善事業を目的に始まった恒例イベントが今年も開催されます！">
+
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="第１３回秋田県国際相撲大会">
+    <meta name="twitter:description" content="日本に住む外国人が日本の国技に挑戦！もちろん日本人の参加者も大歓迎！2005年から異文化交流と慈善事業を目的に始まった恒例イベントが今年も開催されます！">
+    <meta name="twitter:image" content="http://charityakita.com/sumo/img/purple.jpg">
+
+    <!-- Normalize.css for cross browser consistency -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/sumo/css/sumo.css">
+
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script src="https://use.fontawesome.com/9ae522a20e.js"></script>
+</head>
+
+<body>
+
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '1925408434352308',
+                xfbml: true,
+                version: 'v2.5'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <div id="main-wrapper">
+        <div class="banner">
+            <div class="top-bar">
+                <div style="display:flex">
+                <a href="http://charityakita.com"><img class="top-bar-link" src="http://res.cloudinary.com/mca62511/image/upload/c_scale,w_300/v1484530366/logo_on_red_f7fiz0.png"></a>
+                <a href="https://www.facebook.com/events/422137671457476/" target="_blank"><img class="top-bar-link" src="http://res.cloudinary.com/mca62511/image/upload/v1491525256/%EF%BD%86%EF%BD%82%EF%BD%86%EF%BD%82_yhwmhn.png"></a>
+                </div>
+                <a href="http://charityakita.com/sumo"><img class="lang-link" src="http://res.cloudinary.com/mca62511/image/upload/v1484534812/english_esvitg.png"></a>
+            </div>
+            <div class="banner-content">
+                <h1 class="ja"><span>第１３回</span><span>秋田県</span><span>国際</span><span>相撲</span><span>大会</span></h1>
+                <h2><span>The </span><span>13th </span><span>Akita </span><span>International </span><span>Sumo </span><span>Tournament</span></h2>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a class="c-switcher" href="#about">
+                    詳細
+                    </a>
+                </li>
+                <li>
+                    <a class="c-switcher" href="#attend">
+                    観覧
+                    </a>
+                </li>
+                <li>
+                    <a class="c-switcher" href="#volunteer">
+                    ボランティア
+                    </a>
+                </li>
+                <li>
+                    <a class="c-switcher" href="#compete">
+                    力士
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div id="about-content" class="content switchable">
+                <h1>詳細</h1>
+                <p>
+                    
+                    この１２年間、毎春秋田市で国際チャリティー相撲大会が開催されています。このチャリティーの募金先はその年々で変わりますが、継続的に活動をしているチャリティー団体への寄付を主としています。今年の募金先は<a href="http://mirai-no-mori.jp/ja/" target="_blank">NPOみらいの森</a>様です。このイベントの最新情報を知りたい場合、<a href="https://docs.google.com/forms/d/e/1FAIpQLSfm7vSsC44Pucs6M-N3AxqyB4yvANsu3IGx8UmvxSL_QEOMFg/viewform"
+                        target="_blank">こちらから</a>メールアドレスを登録していただくと、最新情報が自動配信されます。
+
+                </p>
+                <p>
+                    本大会の観覧をご希望の場合は<a class="c-switcher" href="#attend">こちら</a>を御覧ください。</br>
+                    本大会で、力士として参加をご希望の場合は<a class="c-switcher" href="#compete">こちら</a>を御覧ください。</br>
+                    本大会では、<a class="c-switcher" href="#volunteer">ボランティア</a>も募集しています。</br>
+                </p>
+                <p class="text-center">
+                    <iframe src="https://www.youtube.com/embed/k12DGZ7iYL0?rel=0&amp;showinfo=0&amp;iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
+                </p>
+                <p>
+                    ご不明な点等ございましたら、<a href="mailto:charityakita@gmail.com">こちらへ</a>メールにてお問い合わせください。
+                </p>
+            </div>
+
+            <div id="attend-content" class="content switchable">
+                <h1>観覧</h1>
+                <h2>日時</h2>
+                <p>
+                    ６月１０日（土）、午前１１：３０から
+                </p>
+                <h2>場所</h2>
+                <p>
+                    秋田県立武道館
+                </p>
+                <h2>入場料</h2>
+                <p>
+                    入場券は当日券のみの販売となります。前売り券はございません。
+                    <table>
+                        <tr>
+                            <td>観客</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;1000円</td>
+                        </tr>
+                        <tr>
+                            <td>高校生・中学生</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;500円</td>
+                        </tr>
+                        <tr>
+                            <td>小学生以下</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;無料</td>
+                        </tr>
+                        <tr>
+                            <td>力士・ボランティア</td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;500円</td>
+                        </tr>
+                    </table>
+                </p>
+                <h2>募金先</h2>
+                <p>
+                    <a href="http://mirai-no-mori.jp/ja/" target="_blank">NPOみらいの森</a>
+                </p>
+                <h1>最新情報</h1>
+                <p>このイベントの最新情報を知りたい場合、下のボタンをクリックして、メールアドレスを登録していただくと、最新情報が自動配信されます。</p>
+                <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfm7vSsC44Pucs6M-N3AxqyB4yvANsu3IGx8UmvxSL_QEOMFg/viewform" target="_blank"><button class="stay-updated material-button primary-button">最新情報</button></a></p>
+            </div>
+
+            <div id="volunteer-content" class="content switchable">
+                <h1>ボランティア</h1>
+                <p>
+                    本大会でのボランティアに興味がある方は、下のボタンよりメールにてボランティアについて お問い合わせください。
+                </p>
+                <p><a href="mailto:charityakita@gmail.com" target="_blank"><button class="stay-updated material-button primary-button">お問い合わせ</button></a></p>
+                <p>
+                    この国際相撲大会は、ボランティアの協力なしでは、開催できません。</br> 毎年必要とされるボランティアは、審判、進行役、入場口等のドア係、取組結果記録係です。 </br>また、写真やビデオの撮影の協力をしてくれる方も募集しております。
+                </p>
+
+            </div>
+
+            <div id="compete-content" class="content switchable">
+                <h1>力士</h1>
+                <p>
+                    力士として本大会への参加を希望する方は下のボタンよりお申込みください。</br>お申込みの際は、お名前、シコ名（自由）、出身地、現在のお住い、本大会へ向けた心意気（スローガン）の入力が必要となります。
+                </p>
+                <p><a href="https://docs.google.com/forms/d/1dZjlmwUL2R5XxQY7dFSAybpV6sChnUB4zOoS3hVZhF8/edit?c=0&w=1" target="_blank"><button class="stay-updated material-button primary-button">力士参加お申し込み</button></a></p>
+                <p>
+                    本大会への力士としての参加は、どなたでも大歓迎です。上手い下手は関係なく、様々なレベルの人が同等に取組をします。そして、本大会のユニークな点は、女性部門があることです。
+                </p>
+                <p>
+                    力士として参加したいけど、ルールが分からないという方！ご心配なく！取組前に基本的なルール等のご説明をさせていただきます。
+                </p>
+                <p>過去の取組の様子はこちらからご覧いただけます。</p>
+                <p class="text-center">
+                    <iframe src="https://www.youtube.com/embed/4jhu48CfH_U?list=PL1qI_aqpz2ufQAkQffQ1IPseknYvb-jl7" frameborder="0" allowfullscreen></iframe>
+                </p>
+
+                <p>ご不明な点等ございましたら、<a href="mailto:charityakita@gmail.com">こちらから</a>メールにてお問い合わせください。</p>
+            </div>
+        </main>
+        <footer>
+            <div class="content">
+                Copyright &copy; 2016 -
+                <script>
+                    document.write(new Date().getFullYear())
+                </script> チャリティ秋田
+                </p>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Load third party JavaScript frameworks or libraries. -->
+
+
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-74758128-3', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <!-- Custom JavaScript -->
+    <script src="/sumo/js/script.js"></script>
+</body>
+
+</html>
