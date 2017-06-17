@@ -20,9 +20,9 @@
         "title": "Contact Us",
         "hidden": true
     },{
-        "filename": "absolute",
+        "filename": "Akita JET Wiki",
         "title": "Sumo",
-        "url": "http://charityakita.com/sumo",
-        "hidden": true
+        "url": "http://akitajet.com/wiki/Main_Page",
+        "hidden": false
     }]
 }
