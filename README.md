@@ -1,7 +1,5 @@
-# AAJ
-
-## Akita Association of JETs
+# Charity Akita
 
 ### "chartiyakita.com"
 
-This is a landing page for Akita Association of JETs. 
+This is the homepage for Charity Akita, a charity fundraising organization based in Akita, Japan. 
