@@ -182,7 +182,6 @@ $(document).ready(function () {
     
                             var $moreLink = $("<div class='read-more-card read-more-events'><a href='https://facebook.com/charityakita/events'>See more events on Facebook</a></div>");
                             $("#facebook-events").append($moreLink);
-                            $(".facebook-loading").hide();
 
     function ifURLExists(url, callback) {
         $.ajax({
