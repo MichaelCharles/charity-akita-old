@@ -96,91 +96,93 @@ $(document).ready(function () {
 
 
 
-
-    $.ajaxSetup({
-        cache: true
-    });
-    $.getScript('//connect.facebook.net/en_US/sdk.js', function () {
-        FB.init({
-            appId: '1925408434352308',
-            version: 'v2.5' /* or v2.0, v2.1, v2.2, v2.3 */
-        });
-        FB.api(
-            "/923345024404557/events/?access_token=1925408434352308%7C-LqKZs2921LCzVaRg4VMbCHojW4",
-            function (data) {
-
-
-
-                function parseFacebookDate(date) {
-                    date = date.split("T");
-                    return date[0];
-                }
-
-
-                if (data && !data.error) {
-                    /* handle the result */
-                    $(".facebook-loading").hide();
-
-                    var buildEvents = function (data, count) {
-                        if (!count) {
-                            count = 0;
-                        }
-
-                        var thisEvent = data[count];
-
-                        if (thisEvent && count < 3) {
-                            for (var i=0; i < eventExceptions.length; i++) {
-                                var tX = eventExceptions[i];
-                                if (thisEvent.name === tX.eventTitle) {
-                                    console.log(tX);
-                                    thisEvent.name = tX.newTitle;
-                                    thisEvent.description = tX.newDescription;
-                                    thisEvent.link = tX.newLink;
-                                }
-                            }
-                            
-                            if (thisEvent.link) {
-                                var $eventCard = $('<a href="http://charityakita.com/halloween" class="event-card"></a>')
-                            } else {
-                                var $eventCard = $('<a href="https://www.facebook.com/events/' + thisEvent.id + '" class="event-card"></a>');
-                            }
-                            var $eventContent = $('<div class="event-content"></div>');
-                            var $eventTitle = $('<h3></h3>');
-                            var $eventDate = $('<p class="event-date"></p>');
-
-                            var eD = new Date(parseFacebookDate(thisEvent.start_time));
-
-                            var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-                            $eventDate.html(monthNames[eD.getMonth()] + " " + eD.getDate() + ", " + eD.getFullYear());
-                            $eventTitle.html(thisEvent.name);
-                            var $eventDescription = $('<p></p>');
-                            $eventDescription.html(thisEvent.description.substring(0, 100) + "...");
-                            $eventContent.append($eventTitle);
-                            $eventContent.append($eventDate);
-                            $eventContent.append($eventDescription);
-
-                            $eventCard.append($eventContent);
-                            $("#facebook-events").append($eventCard);
-
-                            buildEvents(data, (count + 1));
-                        }
-                        else {
+//    
+//    $.ajaxSetup({
+//        cache: true
+//    });
+//    $.getScript('//connect.facebook.net/en_US/sdk.js', function () {
+//        FB.init({
+//            appId: '1925408434352308',
+//            version: 'v2.5' /* or v2.0, v2.1, v2.2, v2.3 */
+//        });
+//        FB.api(
+//            "/923345024404557/events/?access_token=1925408434352308%7C-LqKZs2921LCzVaRg4VMbCHojW4",
+//            function (data) {
+//
+//
+//
+//                function parseFacebookDate(date) {
+//                    date = date.split("T");
+//                    return date[0];
+//                }
+//
+//
+//                if (data && !data.error) {
+//                    /* handle the result */
+//                    $(".facebook-loading").hide();
+//
+//                    var buildEvents = function (data, count) {
+//                        if (!count) {
+//                            count = 0;
+//                        }
+//
+//                        var thisEvent = data[count];
+//
+//                        if (thisEvent && count < 3) {
+//                            for (var i=0; i < eventExceptions.length; i++) {
+//                                var tX = eventExceptions[i];
+//                                if (thisEvent.name === tX.eventTitle) {
+//                                    console.log(tX);
+//                                    thisEvent.name = tX.newTitle;
+//                                    thisEvent.description = tX.newDescription;
+//                                    thisEvent.link = tX.newLink;
+//                                }
+//                            }
+//                            
+//                            if (thisEvent.link) {
+//                                var $eventCard = $('<a href="http://charityakita.com/halloween" class="event-card"></a>')
+//                            } else {
+//                                var $eventCard = $('<a href="https://www.facebook.com/events/' + thisEvent.id + '" class="event-card"></a>');
+//                            }
+//                            var $eventContent = $('<div class="event-content"></div>');
+//                            var $eventTitle = $('<h3></h3>');
+//                            var $eventDate = $('<p class="event-date"></p>');
+//
+//                            var eD = new Date(parseFacebookDate(thisEvent.start_time));
+//
+//                            var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+//                            $eventDate.html(monthNames[eD.getMonth()] + " " + eD.getDate() + ", " + eD.getFullYear());
+//                            $eventTitle.html(thisEvent.name);
+//                            var $eventDescription = $('<p></p>');
+//                            $eventDescription.html(thisEvent.description.substring(0, 100) + "...");
+//                            $eventContent.append($eventTitle);
+//                            $eventContent.append($eventDate);
+//                            $eventContent.append($eventDescription);
+//
+//                            $eventCard.append($eventContent);
+//                            $("#facebook-events").append($eventCard);
+//
+//                            buildEvents(data, (count + 1));
+//                        }
+//                        else {
+//                            var $moreLink = $("<div class='read-more-card read-more-events'><a href='https://facebook.com/charityakita/events'>See more events on Facebook</a></div>");
+//                            $("#facebook-events").append($moreLink);
+//                        }
+//                    };
+//
+//                    buildEvents(data.data);
+//
+//                }
+//               else {
+//                    throw new Error("Error: " + data.error);
+//                }
+//            }
+//        );
+//    });
+    
                             var $moreLink = $("<div class='read-more-card read-more-events'><a href='https://facebook.com/charityakita/events'>See more events on Facebook</a></div>");
                             $("#facebook-events").append($moreLink);
-                        }
-                    };
-
-                    buildEvents(data.data);
-
-                }
-                else {
-                    throw new Error("Error: " + data.error);
-                }
-            }
-        );
-    });
-
-
+                            $(".facebook-loading").hide();
 
     function ifURLExists(url, callback) {
         $.ajax({
