@@ -1,1 +1,7 @@
 archive/* linguist-detectable=false
+archive/*/* linguist-detectable=false
+archive/*/*/* linguist-detectable=false
+archive/*/*/*/* linguist-detectable=false
+archive/*/*/*/*/* linguist-detectable=false
+archive/*/*/*/*/*/* linguist-detectable=false
+archive/*/*/*/*/*/*/* linguist-detectable=false
